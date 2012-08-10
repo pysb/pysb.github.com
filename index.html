@@ -56,6 +56,8 @@
           a.click(trackDownload(m[1], href));
         } else if (href.match('\\.ova$')) {
           a.click(trackDownload('ova', href));
+        } else if (href.match('\\.iso$')) {
+          a.click(trackDownload('iso', href));
         } else if ((href.match(/^http/))&&(!href.match(document.domain))){
           a.click(trackOutbound(href.match(/:\/\/(.[^/]+)/)[1], href));
         }
@@ -92,17 +94,16 @@
       other Python packages, so it can be a bit tricky to install.
     </p>
     <p>
-      <img src="images/ova.png" width="64" height="64" style="float: right" alt="OVA icon">
-      We also provide a virtual appliance running the Ubuntu distribution of
-      Linux with PySB pre-installed. This will let you try PySB without
-      installing its many dependencies yourself. First
-      <a href="https://www.virtualbox.org/wiki/Downloads">download
-      VirtualBox</a> for your platform and install it, then
-      <a href="http://sorger.med.harvard.edu/misc/pysb-0.1.4-demo.ova">download
-      the PySB OVA appliance file</a> and import it into VirtualBox by
-      double-clicking on it. After the import completes you can delete the .ova
-      file. The appliance will require 2 GB of hard drive space once installed,
-      plus space for any files you create inside the virtual system.
+      We also provide a live DVD running the Ubuntu distribution of Linux with
+      PySB pre-installed. This will let you try PySB without installing its many
+      dependencies
+      yourself. <a href="http://sorger.med.harvard.edu/misc/pysb-0.1.7-ubuntu-12.04-desktop-i386.iso">
+      Download the ISO image</a> and burn it onto a DVD, then reboot your
+      computer with the DVD still in the drive. Beware that any files you create
+      will be lost on reboot, so use a USB key to save your work. Or you can
+      boot the ISO file directly
+      in <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>
+      without requiring a physical DVD.
     </p>
     <p>You can clone the source code with
       <a href="http://git-scm.com">Git</a> by running:
