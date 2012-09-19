@@ -24,9 +24,25 @@
     a { color: #008000; }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
+    pre { color:#000000; background-color:#ffffff; font-size:10pt; font-family:'Courier New';
+    padding: 15px; }
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
+
+    .hl.num { color:#2928ff; }
+    .hl.esc { color:#ff00ff; }
+    .hl.str { color:#ff0000; }
+    .hl.dstr { color:#818100; }
+    .hl.slc { color:#838183; font-style:italic; }
+    .hl.com { color:#838183; font-style:italic; }
+    .hl.dir { color:#008200; }
+    .hl.sym { color:#000000; }
+    .hl.line { color:#555555; }
+    .hl.mark { background-color:#ffffbb;}
+    .hl.kwa { color:#000000; font-weight:bold; }
+    .hl.kwb { color:#830000; }
+    .hl.kwc { color:#000000; font-weight:bold; }
+    .hl.kwd { color:#010181; }
   </style>
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -46,6 +62,57 @@
     PySB is a framework for building rule-based mathematical models of biochemical systems. It works
     nicely with scientific Python libraries such as NumPy, SciPy and SymPy for model simulation and
     analysis.
+
+    <h2>Example</h2>
+    <p>Model code:
+    (<a href="https://raw.github.com/pysb/pysb/master/pysb/examples/website_example.py">download</a>)
+    </p>
+    <p>
+    <pre class="hl">
+<span class="hl kwa">from</span> pysb <span class="hl kwa">import</span> <span class="hl sym">*</span>
+<span class="hl kwa">from</span> pysb<span class="hl sym">.</span>integrate <span class="hl kwa">import</span> odesolve
+<span class="hl kwa">from</span> pylab <span class="hl kwa">import</span> linspace<span class="hl sym">,</span> plot<span class="hl sym">,</span> xlabel<span class="hl sym">,</span> ylabel<span class="hl sym">,</span> show
+
+<span class="hl slc"># A simple model with a reversible binding rule</span>
+
+<span class="hl kwd">Model</span><span class="hl sym">()</span>
+
+<span class="hl slc"># Declare the monomers</span>
+<span class="hl kwd">Monomer</span><span class="hl sym">(</span><span class="hl str">'L'</span><span class="hl sym">, [</span><span class="hl str">'s'</span><span class="hl sym">])</span>
+<span class="hl kwd">Monomer</span><span class="hl sym">(</span><span class="hl str">'R'</span><span class="hl sym">, [</span><span class="hl str">'s'</span><span class="hl sym">])</span>
+
+<span class="hl slc"># Declare the parameters</span>
+<span class="hl kwd">Parameter</span><span class="hl sym">(</span><span class="hl str">'L_0'</span><span class="hl sym">,</span> <span class="hl num">100</span><span class="hl sym">)</span>
+<span class="hl kwd">Parameter</span><span class="hl sym">(</span><span class="hl str">'R_0'</span><span class="hl sym">,</span> <span class="hl num">200</span><span class="hl sym">)</span>
+<span class="hl kwd">Parameter</span><span class="hl sym">(</span><span class="hl str">'kf'</span><span class="hl sym">,</span> <span class="hl num">1e-3</span><span class="hl sym">)</span>
+<span class="hl kwd">Parameter</span><span class="hl sym">(</span><span class="hl str">'kr'</span><span class="hl sym">,</span> <span class="hl num">1e-3</span><span class="hl sym">)</span>
+
+<span class="hl slc"># Declare the initial conditions</span>
+<span class="hl kwd">Initial</span><span class="hl sym">(</span><span class="hl kwd">L</span><span class="hl sym">(</span>s<span class="hl sym">=</span><span class="hl kwa">None</span><span class="hl sym">),</span> L_0<span class="hl sym">)</span>
+<span class="hl kwd">Initial</span><span class="hl sym">(</span><span class="hl kwd">R</span><span class="hl sym">(</span>s<span class="hl sym">=</span><span class="hl kwa">None</span><span class="hl sym">),</span> R_0<span class="hl sym">)</span>
+
+<span class="hl slc"># Declare the binding rule</span>
+<span class="hl kwd">Rule</span><span class="hl sym">(</span><span class="hl str">'L_binds_R'</span><span class="hl sym">,</span> <span class="hl kwd">L</span><span class="hl sym">(</span>s<span class="hl sym">=</span><span class="hl kwa">None</span><span class="hl sym">) +</span> <span class="hl kwd">R</span><span class="hl sym">(</span>s<span class="hl sym">=</span><span class="hl kwa">None</span><span class="hl sym">) &lt;&gt;</span> <span class="hl kwd">L</span><span class="hl sym">(</span>s<span class="hl sym">=</span><span class="hl num">1</span><span class="hl sym">) %</span> <span class="hl kwd">R</span><span class="hl sym">(</span>s<span class="hl sym">=</span><span class="hl num">1</span><span class="hl sym">),</span> kf<span class="hl sym">,</span> kr<span class="hl sym">)</span>
+
+<span class="hl slc"># Observe the complex</span>
+<span class="hl kwd">Observable</span><span class="hl sym">(</span><span class="hl str">'LR'</span><span class="hl sym">,</span> <span class="hl kwd">L</span><span class="hl sym">(</span>s<span class="hl sym">=</span><span class="hl num">1</span><span class="hl sym">) %</span> <span class="hl kwd">R</span><span class="hl sym">(</span>s<span class="hl sym">=</span><span class="hl num">1</span><span class="hl sym">))</span>
+
+<span class="hl kwa">if</span> __name__ <span class="hl sym">==</span> <span class="hl str">'__main__'</span><span class="hl sym">:</span>
+    <span class="hl slc"># Simulate the model through 40 seconds</span>
+    time <span class="hl sym">=</span> <span class="hl kwd">linspace</span><span class="hl sym">(</span><span class="hl num">0</span><span class="hl sym">,</span> <span class="hl num">40</span><span class="hl sym">,</span> <span class="hl num">100</span><span class="hl sym">)</span>
+    x <span class="hl sym">=</span> <span class="hl kwd">odesolve</span><span class="hl sym">(</span>model<span class="hl sym">,</span> time<span class="hl sym">)</span>
+    <span class="hl slc"># Plot the trajectory of LR</span>
+    <span class="hl kwd">plot</span><span class="hl sym">(</span>time<span class="hl sym">,</span> x<span class="hl sym">[</span><span class="hl str">'LR'</span><span class="hl sym">])</span>
+    <span class="hl kwd">xlabel</span><span class="hl sym">(</span><span class="hl str">'Time (seconds)'</span><span class="hl sym">)</span>
+    <span class="hl kwd">ylabel</span><span class="hl sym">(</span><span class="hl str">'Amount of LR'</span><span class="hl sym">)</span>
+    <span class="hl kwd">show</span><span class="hl sym">()</span>
+    </pre>
+    </p>
+    <p>Output:</p>
+    <p><img src="example_output.png" width="400" height="271"/></p>
+    <p>Note that this simple model does not demonstrate macros or any other
+    higher-order features of PySB modeling. For an advanced model,
+    see <a href="http://sorgerlab.github.com/earm">EARM 2.0</a>.</p>
 
     <h2>Documentation</h2>
     <p>
