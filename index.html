@@ -30,6 +30,17 @@
       margin-bottom: 1em;
       border-bottom: 1px solid #000000;
     }
+    #header-download {
+      float: right;
+      font-size: 80%;
+      text-align: center;
+    }
+    #header-download img {
+      display: block;
+    }
+    #header-download p {
+      margin: 0;
+    }
     #content {
       padding: 10px;
       background-color: #ffffff;
@@ -78,14 +89,25 @@
 
   <div id="header-wrapper">
     <div id="header">
-      <a href="https://github.com/pysb/pysb"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+      <a href="https://github.com/pysb/pysb"><img style="position: absolute; top: 0; right: 0; border: 0; " src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+      <div id="header-download">
+        <a style="color: inherit;" href="http://sorger.med.harvard.edu/misc/pysb-0.1.4-demo.ova">
+          <img src="images/download.png" width="169" height="62" alt="PySB OVA"/>
+          PySB virtual appliance
+        </a>
+        <p>
+          (<a
+          href="http://docs.pysb.org/en/latest/installation.html#option-1-the-pysb-virtual-machine"
+          >instructions</a>)
+        </p>
+      </div>
       <h1><a href="https://github.com/pysb/pysb">
           <img src="pysb_logo.png" width="250" height="84" alt="PySB">
       </a></h1>
       <div class="description">
         Python framework for Systems Biology modeling
       </div>
-    </div>
+      </div>
   </div>
 
   <div id="content">
@@ -107,9 +129,7 @@
     </p>
 
     <h2>Example</h2>
-    <p>Model code:
-      (<a href="https://raw.github.com/pysb/pysb/master/pysb/examples/website_example.py">download</a>)
-    </p>
+    <p>Model code:</p>
     <p>
     <pre class="hl">
 <span class="hl kwa">from</span> pysb <span class="hl kwa">import</span> <span class="hl sym">*</span>
@@ -143,6 +163,7 @@
 <span class="hl kwa">if</span> __name__ <span class="hl sym">==</span> <span class="hl str">'__main__'</span><span class="hl sym">:</span>
     <span class="hl slc"># Simulate the model through 40 seconds</span>
     time <span class="hl sym">=</span> <span class="hl kwd">linspace</span><span class="hl sym">(</span><span class="hl num">0</span><span class="hl sym">,</span> <span class="hl num">40</span><span class="hl sym">,</span> <span class="hl num">100</span><span class="hl sym">)</span>
+    <span class="hl kwa">print</span> <span class="hl str">&quot;Simulating...&quot;</span>
     x <span class="hl sym">=</span> <span class="hl kwd">odesolve</span><span class="hl sym">(</span>model<span class="hl sym">,</span> time<span class="hl sym">)</span>
     <span class="hl slc"># Plot the trajectory of LR</span>
     <span class="hl kwd">plot</span><span class="hl sym">(</span>time<span class="hl sym">,</span> x<span class="hl sym">[</span><span class="hl str">'LR'</span><span class="hl sym">])</span>
@@ -153,40 +174,50 @@
     </p>
     <p>Output:</p>
     <p><img class="example" src="example_output.png" width="400" height="271"></p>
-    <p>Note that this simple model does not demonstrate macros or any other
-    higher-order features of PySB modeling. For an advanced model,
-    see <a href="http://sorgerlab.github.com/earm">EARM 2.0</a>.</p>
+    <p>The above source code is available as <a
+    href="https://raw.github.com/pysb/pysb/master/pysb/examples/hello_pysb.py">hello_pysb.py</a>
+    in the directory of example models and scripts included with the PySB
+    distribution.  Note that this simple model does not demonstrate macros or
+    any other higher-order features of PySB modeling. For an advanced model, see
+    <a href="http://sorgerlab.github.com/earm">EARM 2.0</a>.</p>
 
     <h2>Documentation</h2>
     <p>
       All of the <a href="http://docs.pysb.org">PySB documentation</a> is
-      available online, courtesy of <a href="http://readthedocs.org/">Read the
-      Docs</a>. The <a href="https://github.com/pysb/pysb/tree/master/pysb/examples/">pysb/examples</a>
+      available online, courtesy of Read the Docs. The <a
+      href="https://github.com/pysb/pysb/tree/master/pysb/examples/">pysb/examples</a>
       directory in the source tree contains sample models and other scripts if
       you'd prefer to learn by example.
     </p>
 
-    <h2>Download</h2>
+    <h2 id="download">Download</h2>
     <p>
-      You can get the <a href="http://pypi.python.org/pypi/pysb"> latest release of PySB from the
-      Python Package Index</a>. However there are quite a few dependencies and not all of them are
-      other Python packages, so it can be a bit tricky to install.
+      You can get the <a href="http://pypi.python.org/pypi/pysb"> latest release
+      of PySB</a> from the Python Package Index. The documentation contains a <a
+      href="http://docs.pysb.org/en/latest/installation.html#option-2-installing-the-dependencies-yourself">list
+      of the dependencies and other installation instructions</a>.
     </p>
     <p>
-      We also provide a live DVD running the Ubuntu distribution of Linux with
-      PySB pre-installed. This will let you try PySB without installing its many
-      dependencies
-      yourself. <a href="http://sorger.med.harvard.edu/misc/pysb-0.1.7-ubuntu-12.04-desktop-i386.iso">
-      Download the ISO image</a> and burn it onto a DVD, then reboot your
-      computer with the DVD still in the drive. Beware that any files you create
-      will be lost on reboot, so use a USB key to save your work. Or you can
-      boot the ISO file directly
-      in <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>
-      without requiring a physical DVD.
+      <a href="http://sorger.med.harvard.edu/misc/pysb-0.1.4-demo.ova"><img src="images/download.png"
+      width="169" height="62" alt="PySB OVA" style="float: right" alt="PySB
+      OVA"/></a> For those who are not comfortable installing Python packages or
+      compiling source code, we also provide
+      a <a href="http://sorger.med.harvard.edu/misc/pysb-0.1.4-demo.ova">PySB
+      virtual appliance</a> with Ubuntu Linux, PySB and its dependencies
+      pre-installed. You'll need virtualization software to run it; we recommend
+      the free and open-source
+      program <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>. There
+      are
+      <a
+      href="http://docs.pysb.org/en/latest/installation.html#option-1-the-pysb-virtual-machine">detailed
+      instructions</a> in the PySB documentation on how to set up the appliance
+      in VirtualBox.
     </p>
     <p>
-      You can clone the source code with <a href="http://git-scm.com">Git</a> by
-      running: <pre>$ git clone git://github.com/pysb/pysb</pre>
+      Those who are interested in the PySB source code can clone it with <a
+      href="http://git-scm.com">Git</a>:
+
+      <pre>$ git clone git://github.com/pysb/pysb</pre>
     </p>
 
     <h2>Authors</h2>
