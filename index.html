@@ -18,7 +18,7 @@
     a:hover { text-decoration: underline; }
     .description { font-size: 1.2em; font-style: italic;}
     .download { float: right; }
-    padding: 15px; }
+    .callout { background: #F0F0F0; border: 1px solid #D0D0D0; padding: 0.5em; }
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     #header, #content, #footer {
       margin: 0 auto;
@@ -101,7 +101,7 @@
           >instructions</a>)
         </p>
       </div>
-      <h1><a href="https://github.com/pysb/pysb">
+      <h1><a href="http://pysb.org/">
           <img src="pysb_logo.png" width="250" height="84" alt="PySB">
       </a></h1>
       <div class="description">
@@ -112,23 +112,80 @@
 
   <div id="content">
 
-    <p>
+    <p class="callout">
       PySB is a framework for building mathematical models of biochemical
       systems as Python programs.  PySB abstracts the complex process of
-      creating equations describing interactions among multiple proteins (or
-      other biomolecules) into a simple and intuitive domain specific
-      programming language.  PySB accomplishes this by automatically generating
-      sets of <a href="http://bionetgen.org/">BioNetGen</a> or <a
-      href="http://kappalanguage.org/">Kappa</a> rules and using the rules to
-      generate systems of equations.  PySB makes it straightforward to divide
-      models into modules and to call libraries of reusable elements (macros)
-      that encode standard biochemical actions. These features promote model
-      transparency, reuse and accuracy.  PySB also interoperates with standard
-      scientific Python libraries such as NumPy, SciPy and SymPy enabling model
-      simulation and analysis.
+      creating equations describing interactions among multiple proteins or
+      other biomolecules into a simple and intuitive domain specific programming
+      language (<a href="#example">see example below</a>), which is internally
+      translated into <a href="http://bionetgen.org/">BioNetGen</a>
+      or <a href="http://kappalanguage.org/">Kappa</a> rules and from there into
+      systems of equations.  PySB makes it straightforward to divide models into
+      modules and to call libraries of reusable elements (macros) that encode
+      standard biochemical actions. These features promote model transparency,
+      reuse and accuracy.  PySB also interoperates with standard scientific
+      Python libraries such as NumPy, SciPy and SymPy enabling model simulation
+      and analysis.
     </p>
 
-    <h2>Example</h2>
+    <h2>Documentation</h2>
+    <p>
+      All of the <a href="http://docs.pysb.org">PySB documentation</a> is
+      available online, courtesy of Read the
+      Docs. The <a href="https://github.com/pysb/pysb/tree/master/pysb/examples/">pysb/examples</a>
+      directory in the source tree contains sample models and other scripts if
+      you'd prefer to learn by example. One of these examples and its output is
+      <a href="#example">reproduced below</a>.
+    </p>
+
+    <h2 id="download">Download</h2>
+    <p>
+      You can get the <a href="http://pypi.python.org/pypi/pysb"> latest release
+      of PySB</a> from the Python Package Index. The documentation contains
+      a <a href="http://docs.pysb.org/en/latest/installation.html#option-2-installing-the-dependencies-yourself">list
+      of the dependencies and other installation instructions</a>. If you are
+      new to scientific programming in Python, you may want to start by
+      downloading
+      the <a href="http://www.enthought.com/products/epd.php">Enthought Python
+      Distribution (EPD)</a> which already includes most of the dependencies.
+    </p>
+    <p>
+      <a href="http://sorger.med.harvard.edu/misc/pysb-0.1.9-demo.ova"><img src="images/download.png"
+      width="169" height="62" alt="PySB OVA" style="float: right" alt="PySB
+      OVA"/></a> For those who are not comfortable installing Python packages or
+      compiling source code, we also provide
+      a <a href="http://sorger.med.harvard.edu/misc/pysb-0.1.9-demo.ova">PySB
+      virtual appliance</a> with Ubuntu Linux, PySB and its dependencies
+      pre-installed. You'll need virtualization software to run it; we recommend
+      the free and open-source
+      program <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>. There
+      are
+      <a
+      href="http://docs.pysb.org/en/latest/installation.html#option-1-the-pysb-virtual-machine">detailed
+      instructions</a> in the PySB documentation on how to set up the appliance
+      in VirtualBox.
+    </p>
+    <p>
+      Those who are interested in the PySB source code can clone it with <a
+      href="http://git-scm.com">Git</a>:
+
+      <pre>$ git clone git://github.com/pysb/pysb</pre>
+    </p>
+
+    <h2>Contributing</h2>
+    <p>
+      Development is centered around
+      our <a href="https://github.com/pysb/pysb">GitHub project page</a>. Bugs
+      and other problems should be reported at
+      the <a href="https://github.com/pysb/pysb/issues">issue tracker</a>, and
+      we welcome pull requests for fixes and enhancements. Subscribe to the PySB
+      mailing list by sending an email
+      to <a href="mailto:pysb@librelist.com">pysb@librelist.com</a>, or you can
+      anonymously <a href="http://librelist.com/browser/pysb/">browse the
+      archives</a>.
+    </p>
+
+    <h2 id="example">Example</h2>
     <p>Model code:</p>
     <p>
     <pre class="hl">
@@ -175,50 +232,11 @@
     <p>Output:</p>
     <p><img class="example" src="example_output.png" width="400" height="271"></p>
     <p>The above source code is available as <a
-    href="https://raw.github.com/pysb/pysb/master/pysb/examples/hello_pysb.py">hello_pysb.py</a>
+    href="https://github.com/pysb/pysb/blob/master/pysb/examples/hello_pysb.py">hello_pysb.py</a>
     in the directory of example models and scripts included with the PySB
     distribution.  Note that this simple model does not demonstrate macros or
     any other higher-order features of PySB modeling. For an advanced model, see
     <a href="http://sorgerlab.github.com/earm">EARM 2.0</a>.</p>
-
-    <h2>Documentation</h2>
-    <p>
-      All of the <a href="http://docs.pysb.org">PySB documentation</a> is
-      available online, courtesy of Read the Docs. The <a
-      href="https://github.com/pysb/pysb/tree/master/pysb/examples/">pysb/examples</a>
-      directory in the source tree contains sample models and other scripts if
-      you'd prefer to learn by example.
-    </p>
-
-    <h2 id="download">Download</h2>
-    <p>
-      You can get the <a href="http://pypi.python.org/pypi/pysb"> latest release
-      of PySB</a> from the Python Package Index. The documentation contains a <a
-      href="http://docs.pysb.org/en/latest/installation.html#option-2-installing-the-dependencies-yourself">list
-      of the dependencies and other installation instructions</a>.
-    </p>
-    <p>
-      <a href="http://sorger.med.harvard.edu/misc/pysb-0.1.9-demo.ova"><img src="images/download.png"
-      width="169" height="62" alt="PySB OVA" style="float: right" alt="PySB
-      OVA"/></a> For those who are not comfortable installing Python packages or
-      compiling source code, we also provide
-      a <a href="http://sorger.med.harvard.edu/misc/pysb-0.1.9-demo.ova">PySB
-      virtual appliance</a> with Ubuntu Linux, PySB and its dependencies
-      pre-installed. You'll need virtualization software to run it; we recommend
-      the free and open-source
-      program <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>. There
-      are
-      <a
-      href="http://docs.pysb.org/en/latest/installation.html#option-1-the-pysb-virtual-machine">detailed
-      instructions</a> in the PySB documentation on how to set up the appliance
-      in VirtualBox.
-    </p>
-    <p>
-      Those who are interested in the PySB source code can clone it with <a
-      href="http://git-scm.com">Git</a>:
-
-      <pre>$ git clone git://github.com/pysb/pysb</pre>
-    </p>
 
     <h2>Authors</h2>
     <p>
