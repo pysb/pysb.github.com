@@ -18,7 +18,8 @@
     a:hover { text-decoration: underline; }
     .description { font-size: 1.2em; font-style: italic;}
     .download { float: right; }
-    .callout { background: #F0F0F0; border: 1px solid #D0D0D0; padding: 0.5em; }
+    .callout { background: #F0F0F0; border: 1px solid #D0D0D0; padding: 0 0.5em; }
+    .callout p { margin: 0.5em 0; }
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     #header, #content, #footer {
       margin: 0 auto;
@@ -146,21 +147,30 @@
 
   <div id="content">
 
-    <p class="callout">
+    <h2>Synopsis</h2>
+    <p>
       PySB is a framework for building mathematical models of biochemical
-      systems as Python programs.  PySB abstracts the complex process of
-      creating equations describing interactions among multiple proteins or
-      other biomolecules into a simple and intuitive domain specific programming
+      systems as Python programs. PySB abstracts the complex process of creating
+      equations describing interactions among multiple proteins or other
+      biomolecules into a simple and intuitive domain specific programming
       language (<a href="#example">see example below</a>), which is internally
       translated into <a href="http://bionetgen.org/">BioNetGen</a>
       or <a href="http://kappalanguage.org/">Kappa</a> rules and from there into
-      systems of equations.  PySB makes it straightforward to divide models into
+      systems of equations. PySB makes it straightforward to divide models into
       modules and to call libraries of reusable elements (macros) that encode
       standard biochemical actions. These features promote model transparency,
-      reuse and accuracy.  PySB also interoperates with standard scientific
+      reuse and accuracy. PySB also interoperates with standard scientific
       Python libraries such as NumPy, SciPy and SymPy enabling model simulation
       and analysis.
     </p>
+    <div class="callout">
+      <p>
+        Lopez, C. F., Muhlich, J. L., Bachman, J. A. &amp; Sorger, P.
+        K. <a href="http://www.nature.com/msb/journal/v9/n1/full/msb20131.html">Programming
+        biological models in Python using PySB</a>. <em>Mol Syst
+        Biol</em> <strong>9,</strong> (2013). doi:10.1038/msb.2013.1
+      </p>
+    </div>
 
     <h2>Documentation</h2>
     <p>
