@@ -1,0 +1,7 @@
+__pycache__/
+output/
+*.pid
+*.pyc
+*~
+.DS_Store
+.idea/
