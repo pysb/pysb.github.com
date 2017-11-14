@@ -5,7 +5,7 @@ set -ev
 ## environment (on Travis) and not a PR
 
 # 1. Check this isn't a Travis PR
-if [ "$TRAVIS_PULL_REQUEST" -ne "false" ]
+if [ "$TRAVIS_PULL_REQUEST" != "false" ]
 then
   echo "This is not a Travis build, or is a Travis PR - skipping deploy."
   exit 0
