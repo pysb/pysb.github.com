@@ -1,5 +1,5 @@
 #!/bin/bash
-set -ev
+set -ex
 
 ## Decrypt the SSH deploy key and push the site live, if this is the live
 ## environment (on Travis) and not a PR
