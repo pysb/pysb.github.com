@@ -21,7 +21,7 @@ fi
 # Should now be safe to deploy
 
 # Decrypt the deploy key and add it as a git remote
-openssl aes-256-cbc -K $encrypted_713170cfc4d9_key -iv $encrypted_713170cfc4d9_iv
+openssl aes-256-cbc -K $encrypted_713170cfc4d9_key -iv $encrypted_713170cfc4d9_iv \
   -in deploy_key.enc -out deploy_key -d
 chmod 600 deploy_key
 mv deploy_key ~/.ssh/id_rsa
