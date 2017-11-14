@@ -1,0 +1,3 @@
+[submodule "pysb-tutorials"]
+	path = pysb-tutorials
+	url = https://github.com/lolab-vu/pysb-tutorials
