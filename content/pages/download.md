@@ -66,9 +66,8 @@ There are two different ways to install and use PySB:
 
        pip install pysb
 
-   .. note::
-       **Mac users:** To open a terminal on a Mac, open Spotlight search
-       (press command key and space), type ``terminal`` and press enter.
+   > **Mac users:** To open a terminal on a Mac, open Spotlight search
+   > (press command key and space), type ``terminal`` and press enter.
 
 5\. **Start Python and PySB**
 
