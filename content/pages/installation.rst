@@ -1,5 +1,8 @@
-Title: Download PySB
-save_as: download.html
+Installation
+############
+
+:title: Download PySB
+:save_as: download.html
 
 There are two different ways to install and use PySB:
 
@@ -8,71 +11,55 @@ There are two different ways to install and use PySB:
    *OR*
 
 2. **Download a Docker container with PySB and Jupyter Notebook.** If you
-   are familiar with [Docker](#links), PySB can be installed from the Docker
+   are familiar with `Docker`_, PySB can be installed from the Docker
    Hub by typing `docker pull pysb/pysb`. Further details are
    below.
 
+.. note::
+    **Need Help?**
+    If you run into any problems with installation, please visit our chat room:
+    https://gitter.im/pysb/pysb
 
-    > **Need Help?**
-    > If you run into any problems with installation, please visit our chat 
-    > room:
-    > <https://gitter.im/pysb/pysb>
+Option 1: Install PySB natively on your computer
+------------------------------------------------
 
-# Option 1: Install PySB natively on your computer
+1. **Install Anaconda**
 
-1\. **Install Anaconda**
-  
-   Our recommended approach is to use [Anaconda](#links), which is a 
-   distribution of
+   Our recommended approach is to use `Anaconda`_, which is a distribution of
    Python containing most of the numeric and scientific software needed to
    get started. If you are a Mac or Linux user, have used Python before and
    are comfortable using ``pip`` to install software, you may want to skip
    this step and use your existing Python installation.
-   
+
    Anaconda has a simple graphical installer which can be downloaded from
-   <https://www.continuum.io/downloads> - select your operating system
-   and download the **Python 2.7 version**. The default installer options
-   are usually appropriate.
+   https://www.continuum.io/downloads - select your operating system
+   and download the 64 bit version. Both Python 2.7 and 3.6 are supported. The
+   default installer options are usually appropriate.
 
-   > **Windows users:** If you are unsure whether to use the 32-bit or
-   > 64-bit installer, press the Windows Start button, search for “About
-   > your PC”, and under “System type” it will specify 32-bit operating
-   > system or 64-bit operating system
+2. **Install PySB**
 
-2\. (Windows only) **Install perl**
-
-   Press the Windows Start button, search for “command prompt”, and select
-   it/press enter. Then enter the following at the prompt:
-
-       conda install --yes perl
-
-   Use the command prompt when you need to type commands in a terminal.
-
-3\. **Install BioNetGen**
-
-   Download BioNetGen from here:
-   <http://bionetgen.org/index.php/BioNetGen_Distributions>
-
-   Extract the download, rename the unzipped ``BioNetGen-x.y.z`` folder
-   to just ``BioNetGen`` and move it into ``/usr/local/share`` (Mac or
-   Linux) or ``C:\Program Files`` (Windows). If you would like to put it
-   somewhere else, set the ``BNGPATH`` environment variable to the full
-   path to the ``BioNetGen-x.y.z`` folder.
-
-4\. **Install PySB**
-
-   The installation is very straightforward with ``pip`` - type the
+   The installation is very straightforward with ``conda`` - type the
    following in a terminal:
 
-       pip install pysb
+       `conda install -c alubbock pysb`
 
-   > **Mac users:** To open a terminal on a Mac, open Spotlight search
-   > (press command key and space), type ``terminal`` and press enter.
+   .. note::
+        You may wish to use the Anaconda prompt, which sets up the Anaconda
+        paths automatically, rather than the standard command prompt or
+        terminal on your operating system. Otherwise, you may have to use the
+        full path to the ``conda`` command each time, and may end up using
+        the system version of Python, rather than the Anaconda one.
 
-5\. **Start Python and PySB**
+   .. note::
+        You can also install PySB using ``pip``, but in that case you will
+        need to manually install `BioNetGen`_ into the default path for your
+        platform (/usr/local/share/BioNetGen on Mac and Linux, c:\\Program
+        Files\\BioNetGen on Windows), or set the `BNGPATH` environment
+        variable to the BioNetGen path on your machine.
 
-   If you installed Python using [Anaconda](#links) on Windows, search for and 
-   select
+3. **Start Python and PySB**
+
+   If you installed Python using `Anaconda`_ on Windows, search for and select
    ``IPython`` from your Start Menu (Windows). Otherwise, open a terminal
    and type ``python`` to get started (or ``ipython``, if installed).
 
@@ -80,35 +67,48 @@ There are two different ways to install and use PySB:
    loading PySB. If no error messages appear and the next Python prompt
    appears, you have succeeded in installing PySB!
 
-## Recommended additional software
+Recommended additional software
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The following software is not required for the basic operation of PySB, but
 provides extra capabilities and features when installed.
 
-* [matplotlib](#links)
+* `cython`_ or `weave`_
+  Cython is a package for compiling Python code into C code on the fly. It
+  is used by PySB's `ScipyOdeSimulator` to greatly improve the
+  speed of ODE integration. PySB will detect and use Cython automatically,
+  if available. To install with Anaconda, type
+  `conda install cython`.
+  With pip, type `pip install cython`.
+
+  Weave performs the same job as Cython, and is slightly faster in some
+  circumstances. It is only available on Python 2. To install with Anaconda,
+  type `conda install -c conda-forge weave`. With pip, type
+  `pip install weave`.
+
+* `matplotlib`_
 
   This Python package allows you to plot the results of your simulations. It
   is not a hard requirement of PySB but many of the example scripts use it.
-  matplotlib is included with [Anaconda](#links). Otherwise, it can be 
-  installed
+  `matplotlib`_ is included with `Anaconda`_. Otherwise, it can be installed
   with `pip install matplotlib`.
 
-* [pandas](#links)
+* `pandas`_
 
   This Python package provides extra capabilities for examining large
   numerical datasets, with statistical summaries and database-like
   manipulation capabilities. It is not a hard requirement of PySB, but it is a
   useful addition, particularly with large sets of simulation results.
-  [pandas](#links) is included with [Anaconda](#links). Otherwise, it can be installed with
+  `pandas`_ is included with `Anaconda`_. Otherwise, it can be installed with
   `pip install pandas`.
 
-* [IPython](#links)
+* `IPython`_
 
   An alternate interactive Python shell, much improved over the standard one.
-  [IPython](#links) is included with [Anaconda](#links). Otherwise, it can be installed
+  `IPython`_ is included with `Anaconda`_. Otherwise, it can be installed
   with `pip install ipython`.
 
-* [Kappa](#links) 4.0
+* `Kappa`_ 4.0
 
   Kappa is a rule-based modeling tool that can produce several useful model
   visualizations or perform an agent-based model simulation. PySB optionally
@@ -125,28 +125,34 @@ provides extra capabilities and features when installed.
   version and operating system information so that you have just ``KaSim.exe``
   (Windows) or ``KaSim`` (Mac or Linux).
 
-# Option 2: Docker container with PySB and Jupyter Notebook
+  On Anaconda, Kappa can be installed with
+  `conda install -c alubbock kappa`.
 
-## Background
+Option 2: Docker container with PySB and Jupyter Notebook
+----------------------------------------------------------
 
-[Docker](#links) is a virtualization platform which encapsulates software 
-within a
+Background
+^^^^^^^^^^
+
+`Docker`_ is a virtualization platform which encapsulates software within a
 container. It can be thought of like a virtual machine, only it contains
 just the application software (and supporting dependencies) and not a full
 operating system stack.
 
-## Install Docker and the PySB software stack
+Install Docker and the PySB software stack
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. **Install Docker**
 
    To use PySB with Docker, first you'll need to install Docker, which can be
-   obtained from <http://www.docker.com>.
+   obtained from https://www.docker.com/community-edition#/download (Windows
+   and Mac). Linux users should use their package manager (e.g. ``apt-get``).
 
 2. **Download the PySB software stack from the Docker Hub**
 
    On the command line, this requires a single command:
 
-       docker pull pysb/pysb
+       `docker pull pysb/pysb`
 
    This only needs to be done once, or when software updates are required.
 
@@ -155,7 +161,7 @@ operating system stack.
    Start the Docker container with the following command (on Linux, the command
    may need to be prefixed with ``sudo``):
 
-       docker run -d -p 8888:8888 pysb/pysb
+       `docker run -it --rm -p 8888:8888 pysb/pysb`
 
    This starts the PySB Docker container with Jupyter notebook and connects it
    to port 8888.
@@ -167,10 +173,13 @@ operating system stack.
    Jupyter notebook logo. Several example and tutorial notebooks are included
    to get you started.
 
-# Important notes
+Important notes for Docker installations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To see graphics from matplotlib within the Jupyter Notebook, you'll need to
 set the following option in your notebooks before calling any plot commands:
+
+.. code-block:: ipython
 
     %matplotlib inline
 
@@ -184,22 +193,22 @@ further information on the options available for the container (such
 as sharing a directory with the host computer to preserve notebooks,
 setting a password and more). Documentation from the Jupyter project is
 available at
-<https://github.com/jupyter/docker-stacks/tree/master/scipy-notebook>
+https://hub.docker.com/r/jupyter/scipy-notebook/
 
-# <a name="links">Links</a>
-
-* Anaconda: <https://www.continuum.io/downloads>
-* Docker: <http://www.docker.org/>
-* Kappa: <http://www.kappalanguage.org/>
-* Git: <http://git-scm.com/>
-* IPython: <http://ipython.org/>
-* OCaml: <http://caml.inria.fr/ocaml/>
-* GraphViz: <http://www.graphviz.org/>
-* pandas: <http://pandas.pydata.org/>
-* Python: <http://www.python.org/>
-* SciPy: <http://www.scipy.org/>
-* NumPy: <http://www.numpy.org/>
-* SymPy: <http://www.sympy.org/>
-* matplotlib: <http://matplotlib.org/>
-* BioNetGen: <http://www.bionetgen.org/>
-* Perl: <http://www.perl.org/>
+.. _Anaconda: https://www.continuum.io/downloads
+.. _Docker: http://www.docker.org/
+.. _Kappa: http://www.kappalanguage.org/
+.. _Git: http://git-scm.com/
+.. _IPython: http://ipython.org/
+.. _OCaml: http://caml.inria.fr/ocaml/
+.. _GraphViz: http://www.graphviz.org/
+.. _pandas: http://pandas.pydata.org/
+.. _Python: http://www.python.org/
+.. _SciPy: http://www.scipy.org/
+.. _NumPy: http://www.numpy.org/
+.. _SymPy: http://www.sympy.org/
+.. _matplotlib: http://matplotlib.org/
+.. _BioNetGen: http://www.bionetgen.org/
+.. _Perl: http://www.perl.org/
+.. _Cython: http://cython.org/
+.. _weave: https://pypi.python.org/pypi/weave
