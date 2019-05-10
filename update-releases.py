@@ -2,6 +2,7 @@ from __future__ import unicode_literals
 import json
 import dateutil.parser
 import os
+import re
 
 RELEASE_URL = 'https://api.github.com/repos/pysb/pysb/releases'
 RELEASE_TEMPLATE = '''Title: PySB {tag_name} Released
@@ -42,6 +43,8 @@ for release in data:
         release_date=release_date.isoformat()[0:10],
         release_notes=release_notes
     )
+    # Hyperlink to github PRs
+    page, _ = re.subn('#(\d+)', '[#\\1](https://github.com/pysb/pysb/pull/\\1)', page)
 
     with open(tgt_filename, 'w') as f:
         f.write(page)
