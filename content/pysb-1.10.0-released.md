@@ -2,6 +2,7 @@ Title: PySB v1.10.0 Released
 Date: 2019-10-16
 Category: news
 Tags: pysb-release
+Slug: pysb-v1-10-0-released
 
 # New features
 
@@ -9,12 +10,12 @@ Tags: pysb-release
 
   Local functions allow PySB expressions to accept a tagged `MonomerPattern` or `ComplexPattern` as an argument. For example, in the following snippet, `A` synthesizes `C` with rate dependent on bound `B`:
 
-  ```python
+```python
   Observable('AB_motif', A(b=1) % B(a=1))
   Tag('x')
   Expression('f_synth', k_synthC * AB_motif(x) ** 2)
   Rule('_R1', A() @ x >> A() @ x + C(), f_synth)
-  ```
+```
 
   See [localfunc.py](https://github.com/pysb/pysb/blob/master/pysb/examples/localfunc.py) for a complete example.
 
