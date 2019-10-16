@@ -51,3 +51,11 @@ DEFAULT_PAGINATION = False
 MARKUP = ('md', 'ipynb')
 PLUGIN_PATH = './plugins'
 PLUGINS = ['ipynb.markup']
+MARKDOWN = {
+  'extension_configs': {
+    'markdown.extensions.fenced_code': {},
+    'markdown.extensions.codehilite': {'css_class': 'highlight'},
+    'markdown.extensions.extra': {}
+  },
+  'output_format': 'html5'
+}
