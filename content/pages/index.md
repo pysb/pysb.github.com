@@ -110,8 +110,8 @@ other higher-order features of PySB modeling. For an advanced model, see
 # Authors
 
 PySB is primarily developed by members of the
-[Sorger Lab](https://sorger.med.harvard.edu) at Harvard Medical School and
-the [Lopez Lab](https://my.vanderbilt.edu/lopezlab/) at Vanderbilt University:
+[Lopez Lab](https://my.vanderbilt.edu/lopezlab/) at Vanderbilt University and the
+[Sorger Lab](https://sorger.med.harvard.edu) at Harvard Medical School:
 
 ## Vanderbilt
 

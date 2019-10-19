@@ -29,10 +29,11 @@ Option 1: Install PySB natively on your computer
    Python containing most of the numeric and scientific software needed to
    get started. If you are a Mac or Linux user, have used Python before and
    are comfortable using ``pip`` to install software, you may want to skip
-   this step and use your existing Python installation.
+   this step and use your existing Python installation (see notes in the
+   following step).
 
    Anaconda has a simple graphical installer which can be downloaded from
-   https://www.continuum.io/downloads - select your operating system
+   https://www.anaconda.com/distribution/ - select your operating system
    and download the 64 bit version. Both Python 2.7 and 3.6 are supported. The
    default installer options are usually appropriate.
 
@@ -195,7 +196,7 @@ setting a password and more). Documentation from the Jupyter project is
 available at
 https://hub.docker.com/r/jupyter/scipy-notebook/
 
-.. _Anaconda: https://www.continuum.io/downloads
+.. _Anaconda: https://www.anaconda.com/distribution/
 .. _Docker: http://www.docker.org/
 .. _Kappa: http://www.kappalanguage.org/
 .. _Git: http://git-scm.com/
