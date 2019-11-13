@@ -9,6 +9,7 @@ RELEASE_TEMPLATE = '''Title: PySB {tag_name} Released
 Date: {release_date}
 Category: news
 Tags: pysb-release
+Slug: pysb-{tag_slug}-released
 
 {release_notes}
 '''
@@ -40,6 +41,7 @@ for release in data:
     release_date = dateutil.parser.parse(release['published_at'])
     page = RELEASE_TEMPLATE.format(
         tag_name=release['tag_name'],
+        tag_slug=release['tag_name'].replace('.', '-'),
         release_date=release_date.isoformat()[0:10],
         release_notes=release_notes
     )
