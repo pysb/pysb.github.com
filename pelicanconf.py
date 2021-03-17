@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 import os
+from pelican_jupyter import markup as nb_markup
 
 AUTHORS = 'John Bachman, Carlos Lopez, Alex Lubbock, Jeremy Muhlich'
 SITENAME = 'PySB'
@@ -49,8 +50,8 @@ AUTHOR_FEED_RSS = None
 DEFAULT_PAGINATION = False
 
 MARKUP = ('md', 'ipynb')
-PLUGIN_PATH = './plugins'
-PLUGINS = ['ipynb.markup']
+PLUGINS = [nb_markup]
+IGNORE_FILES = ['.ipynb_checkpoints']
 MARKDOWN = {
   'extension_configs': {
     'markdown.extensions.fenced_code': {},

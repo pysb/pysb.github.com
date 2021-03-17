@@ -5,3 +5,4 @@ jupyter
 ipython
 nbconvert
 beautifulsoup4
+pelican-jupyter
