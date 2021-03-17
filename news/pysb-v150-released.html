@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>PySB v1.5.0 Released</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="PySB Atom Feed" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <a href="/"><img src="/images/pysb-swirl.png" alt="PySB logo" /><h1>PySB  <strong>Systems biology modeling in Python</strong></a></h1>
+                <nav><ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/download">Download</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/tutorials">Tutorials</a></li>
+                    <li><a href="/support">Support</a></li>
+                </ul>
+                </nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/news/pysb-v150-released" rel="bookmark"
+           title="Permalink to PySB v1.5.0 Released">PySB v1.5.0 Released</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <span>Sat 19 August 2017</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->      <h1>New features</h1>
+<p><code>BngSimulator</code>, an interface to all simulators provided by BioNetGen: ODE, partitioned-leaping, SSA (stochastic) and NFsim (network-free stochastic). See <code>pysb.simulator.bng.BngSimulator</code> (#272).</p>
+<h1>General improvements</h1>
+<ul>
+<li>Faster and more memory-efficient construction of ODEs from rules (#293).</li>
+<li><code>ScipyOdeSimulator</code> is faster in "pure Python" mode (i.e. without <code>weave</code> and a C compiler installed). It now also supports a somewhat broader range of sympy expressions in reaction rates. Also an experimental <code>use_theano</code> option has been added which uses <a href="http://deeplearning.net/software/theano/">theano</a> rather than <a href="https://github.com/scipy/weave">weave</a> for evaluating differential equation expressions. Note that PySB users who previously depended on <code>scipy.weave</code> for fast C translation of ODE expressions must now install the standalone <code>weave</code> package, as this module has been removed from scipy (#294).</li>
+<li><code>StochKitSimulator</code> adds support for models with expressions. Also the simulation setup process is now faster.</li>
+<li>Performance benchmarking and regression testing with Airspeed Velocity (#275). We will eventually work out a way to automatically execute the test suite and publish the results, but for now anyone who's interested in this would have to run it themselves.</li>
+<li>Continuous Integration for Windows with AppVeyor (#263).</li>
+</ul>
+<h1>Bugfixes</h1>
+<ul>
+<li>Accessing <code>SimulationResult.all</code> no longer crashes when <code>unicode</code> strings are used for observable or expression names under Python 2 (#291, issue #290). We thought we fixed the whole unicode-and-numpy issue here back in #245, but apparently we missed a spot.</li>
+<li><code>MatlabExporter</code> now correctly handles empty observables, i.e. observables whose pattern doesn't match any reachable species (#289).</li>
+<li>Some code errors in the tutorial (module/class names that didn't get updated during a code refactoring) have been corrected (#286). Thanks to Michael Retchin for catching this.</li>
+</ul>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme <a href="https://github.com/blueicefield/pelican-blueidea/">blueidea</a>, inspired by the default theme.</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

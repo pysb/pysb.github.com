@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>PySB - pysb-release</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="PySB Atom Feed" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <a href="/"><img src="/images/pysb-swirl.png" alt="PySB logo" /><h1>PySB  <strong>Systems biology modeling in Python</strong></a></h1>
+                <nav><ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/download">Download</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/tutorials">Tutorials</a></li>
+                    <li><a href="/support">Support</a></li>
+                </ul>
+                </nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/news/pysb-v1-11-1-released">PySB v1.11.1 Released</a></h1>
+<footer class="post-info">
+        <span>Wed 17 March 2021</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info --><p>The only change in this release is that Python version requirements are now specified in setup.py metadata (Python 2.7, or &gt;=3.5). This is anticipated to be the final PySB release to support Python 2.7.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/news/pysb-v1-11-0-released" rel="bookmark"
+                           title="Permalink to PySB v1.11.0 Released">PySB v1.11.0 Released</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Wed 13 November 2019</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->                <h1>New features</h1>
+<ul>
+<li>JSON model import and export (<a href="https://github.com/pysb/pysb/pull/469">#469</a>)</li>
+</ul>
+<h1>Improvements</h1>
+<ul>
+<li>Models stored in HDF5 files using <code>SimulationResult.save()</code> now use JSON, rather than pickle</li>
+<li>Raise a <code>ValueError</code> if a rule defined with reverse rate, but expression is not reversible (<a href="https://github.com/pysb/pysb/pull/471">#471</a>)</li>
+</ul>
+<h1>Bug fixes</h1>
+<ul>
+<li>Fixes for importing certain BNGL and SBML models which …</li></ul>
+                <a class="readmore" href="/news/pysb-v1-11-0-released">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/news/pysb-v1-10-0-released" rel="bookmark"
+                           title="Permalink to PySB v1.10.0 Released">PySB v1.10.0 Released</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Wed 16 October 2019</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->                <h1>New features</h1>
+<ul>
+<li>Local functions (<a href="https://github.com/pysb/pysb/pull/412">#412</a>, <a href="https://github.com/pysb/pysb/pull/464">#464</a>) </li>
+</ul>
+<p>Local functions allow PySB expressions to accept a tagged <code>MonomerPattern</code> or <code>ComplexPattern</code> as an argument. For example, in the following snippet, <code>A</code> synthesizes <code>C</code> with rate dependent on bound <code>B</code>:</p>
+<div class="highlight"><pre><span></span>  <span class="n">Observable</span><span class="p">(</span><span class="s1">&#39;AB_motif&#39;</span><span class="p">,</span> <span class="n">A</span><span class="p">(</span><span class="n">b</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">B</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+  <span class="n">Tag</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+  <span class="n">Expression</span><span class="p">(</span><span class="s1">&#39;f_synth&#39;</span><span class="p">,</span> <span class="n">k_synthC</span> <span class="o">*</span> <span class="n">AB_motif …</span></pre></div>
+                <a class="readmore" href="/news/pysb-v1-10-0-released">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/news/pysb-v191-released" rel="bookmark"
+                           title="Permalink to PySB v1.9.1 Released">PySB v1.9.1 Released</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Fri 28 June 2019</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->                <h1>Bug fixes</h1>
+<ul>
+<li>Fix BngSimulator when specifying parameters to change initial conditions (<a href="https://github.com/pysb/pysb/pull/450">#450</a>)</li>
+</ul>
+<h1>Miscellaneous</h1>
+<ul>
+<li>Use Anaconda package of LibSBML on Python 3.7 for testing on Travis (<a href="https://github.com/pysb/pysb/pull/448">#448</a>)</li>
+</ul>
+                <a class="readmore" href="/news/pysb-v191-released">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/news/pysb-v190-released" rel="bookmark"
+                           title="Permalink to PySB v1.9.0 Released">PySB v1.9.0 Released</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Fri 10 May 2019</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->                <h1>New Features</h1>
+<ul>
+<li><code>MultiState</code> capability, which enables a single <code>Monomer</code> site to be specified with multiple states (<a href="https://pysb.readthedocs.io/en/stable/modules/core.html#pysb.core.MultiState">documentation</a>) (<a href="https://github.com/pysb/pysb/pull/410">#410</a>)</li>
+<li><code>ScipyOdeSimulator</code> multiprocessing capability, using <code>n_processors</code> argument (<a href="http://docs.pysb.org/en/stable/modules/simulator.html#pysb.simulator.ScipyOdeSimulator.run">documentation</a>) (<a href="https://github.com/pysb/pysb/pull/395">#395</a>)</li>
+<li>Multi-GPU simulations and chunking support (split large simulation sets into GPU-sized blocks) for <code>CupSodaSimulator</code> (<a href="https://github.com/pysb/pysb/pull/409">#409</a>)</li>
+<li>Sensitivity analysis class can now work for model parameter …</li></ul>
+                <a class="readmore" href="/news/pysb-v190-released">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/news/pysb-v181-released" rel="bookmark"
+                           title="Permalink to PySB v1.8.1 Released">PySB v1.8.1 Released</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Mon 10 December 2018</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->                <h1>Bugfixes</h1>
+<ul>
+<li>Fix path detection for external tools in new Anaconda releases <a href="https://github.com/pysb/pysb/pull/394">(#394)</a></li>
+<li>Fix errors in tutorials and example models <a href="https://github.com/pysb/pysb/pull/392">(#392)</a></li>
+<li>Fix error message in ScipyOdeSimulator referring to renamed kwarg <a href="https://github.com/pysb/pysb/pull/391">(#391)</a></li>
+<li>Fix package name for libsbml in setup.py <a href="https://github.com/pysb/pysb/pull/390">(#390)</a></li>
+<li>Tests: Fix Python 3.7 libsbml installation on travis <a href="https://github.com/pysb/pysb/pull/388">(#388)</a></li>
+</ul>
+                <a class="readmore" href="/news/pysb-v181-released">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/news/pysb-v180-released" rel="bookmark"
+                           title="Permalink to PySB v1.8.0 Released">PySB v1.8.0 Released</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Fri 19 October 2018</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->                <h1>New Features</h1>
+<ul>
+<li>Model component names will now tab-complete when accessed as part of a ComponentSet (<a href="https://github.com/pysb/pysb/pull/380">#380</a></li>
+</ul>
+<h1>General Improvements</h1>
+<ul>
+<li>Keyword arguments to <code>__init__</code> are now validated by <code>ScipyOdeSimulator</code> (<a href="https://github.com/pysb/pysb/pull/381">#381</a>), <code>StochKitSimulator</code> (<a href="https://github.com/pysb/pysb/pull/382">#382</a>), and <code>CupSodaSimulator</code> (<a href="https://github.com/pysb/pysb/pull/383">#383</a>)</li>
+<li>BioNetGen: Extra functions are now supported, including <code>And</code>, <code>Or</code>, <code>Floor</code>, <code>Ceiling</code>, <code>Min</code>, <code>Max</code>, <code>Abs</code>, and the constants …</li></ul>
+                <a class="readmore" href="/news/pysb-v180-released">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/news/pysb-v170-released" rel="bookmark"
+                           title="Permalink to PySB v1.7.0 Released">PySB v1.7.0 Released</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Mon 23 July 2018</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->                <h1>New Features</h1>
+<ul>
+<li>Python 3.7 now officially supported (in addition to 3.6 and 2.7) (#368)</li>
+<li>Filtering for ComponentSets (<a href="https://pysb.readthedocs.io/en/stable/modules/core.html#pysb.core.ComponentSet.filter">documentation</a>) (#340)</li>
+<li>SBML export now uses <a href="https://pypi.org/project/python-libsbml/">LibSBML</a> and supports compartments and expressions (#367)</li>
+<li>On demand observable trajectories without adding them to the model (<a href="https://pysb.readthedocs.io/en/stable/modules/simulator.html#pysb.simulator.SimulationResult.observable">documentation</a>) (#337)</li>
+</ul>
+<h1>General Improvements</h1>
+<ul>
+<li>The <code>&lt;&gt;</code> operator for …</li></ul>
+                <a class="readmore" href="/news/pysb-v170-released">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/news/pysb-v160-released" rel="bookmark"
+                           title="Permalink to PySB v1.6.0 Released">PySB v1.6.0 Released</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Wed 07 March 2018</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->                <h1>New Features</h1>
+<ul>
+<li>New reversible rule operator <code>|</code>; the previous <code>&lt;&gt;</code> operator is now pending deprecation (#309)</li>
+<li>Saving and loading of <code>SimulationResult</code> objects with metadata in HDF5 format (#292)</li>
+<li>PySB now supports Kappa 4, including custom rate laws with PySB <code>Expression</code>s. Kappa 3 support has been dropped (#334)</li>
+<li>Rule pattern matching and …</li></ul>
+                <a class="readmore" href="/news/pysb-v160-released">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/news/pysb-v150-released" rel="bookmark"
+                           title="Permalink to PySB v1.5.0 Released">PySB v1.5.0 Released</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Sat 19 August 2017</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->                <h1>New features</h1>
+<p><code>BngSimulator</code>, an interface to all simulators provided by BioNetGen: ODE, partitioned-leaping, SSA (stochastic) and NFsim (network-free stochastic). See <code>pysb.simulator.bng.BngSimulator</code> (#272).</p>
+<h1>General improvements</h1>
+<ul>
+<li>Faster and more memory-efficient construction of ODEs from rules (#293).</li>
+<li><code>ScipyOdeSimulator</code> is faster in "pure Python" mode (i.e. without <code>weave</code> and a …</li></ul>
+                <a class="readmore" href="/news/pysb-v150-released">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/news/pysb-v140-released" rel="bookmark"
+                           title="Permalink to PySB v1.4.0 Released">PySB v1.4.0 Released</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Fri 09 June 2017</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->                <h1>New features</h1>
+<ul>
+<li><code>StochKitSimulator</code>, an interface to the stochastic simulator <a href="https://github.com/StochSS/StochKit">StochKit</a>. See <code>pysb.simulator.stochkit.StochKitSimulator</code>.</li>
+<li><code>InitialsSensitivity</code>, a tool to perform pairwise sensitivity analysis of initial conditions. See <code>pysb.tools.sensitivity_analysis.InitialSensitivity</code>. <strong>EXPERIMENTAL</strong>.</li>
+<li>Import models directly from BioModels from just their ID (BIOMDxxx... or MODELxxx...) with <code>pysb.importers.sbml.model_from_biomodels()</code>.</li>
+</ul>
+<h1>General …</h1>
+                <a class="readmore" href="/news/pysb-v140-released">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/news/pysb-v130-released" rel="bookmark"
+                           title="Permalink to PySB v1.3.0 Released">PySB v1.3.0 Released</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Fri 24 March 2017</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->                <h1>New features</h1>
+<ul>
+<li>CupSodaSimulator, a wrapper for the <a href="https://github.com/aresio/cupSODA">cupSODA</a> GPU-based ODE integrator. No special Python libraries are necessary since cupSODA comes as a standalone binary, but if PyCUDA is installed then PySB can auto-detect the configuration details of your GPU. See the documentation in <code>pysb.simulator.CupSodaSimulator</code> for more.</li>
+<li>Simulators can …</li></ul>
+                <a class="readmore" href="/news/pysb-v130-released">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/news/pysb-v122-released" rel="bookmark"
+                           title="Permalink to PySB v1.2.2 Released">PySB v1.2.2 Released</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Wed 11 January 2017</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->                <h1>Bugfixes</h1>
+<ul>
+<li>The SBML exporter works again (it's been broken ever since v1.0.0 😬)</li>
+</ul>
+<h1>Other</h1>
+<ul>
+<li>Documentation improvements</li>
+</ul>
+                <a class="readmore" href="/news/pysb-v122-released">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/news/pysb-v121-released" rel="bookmark"
+                           title="Permalink to PySB v1.2.1 Released">PySB v1.2.1 Released</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Thu 13 October 2016</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->                <h1>Bugfixes</h1>
+<ul>
+<li>Python 3 / unicode compatibility fixes</li>
+</ul>
+                <a class="readmore" href="/news/pysb-v121-released">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/news/pysb-v120-released" rel="bookmark"
+                           title="Permalink to PySB v1.2.0 Released">PySB v1.2.0 Released</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Fri 07 October 2016</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->                <h1>New features</h1>
+<p>*Brand new Simulator classes and SimulationResult classes in the 
+<code>pysb.simulator</code> package. The old <code>pysb.integrate</code> API is unchanged but has been
+ reimplemented using the Simulator class.
+* Model import from other types of models in the <code>pysb.importers</code> package. 
+Currently supports BNGL and SBML model import.</p>
+<h1>Bugfixes</h1>
+<ul>
+<li>pysb_flat …</li></ul>
+                <a class="readmore" href="/news/pysb-v120-released">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/news/pysb-v111-released" rel="bookmark"
+                           title="Permalink to PySB v1.1.1 Released">PySB v1.1.1 Released</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Mon 02 May 2016</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->                <p>Release to fix one minor bug with the PyPI upload.</p>
+<h1>Bugfixes</h1>
+<ul>
+<li>The source distribution on PyPI now includes ez_setup.py.</li>
+</ul>
+                <a class="readmore" href="/news/pysb-v111-released">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/news/pysb-v110-released" rel="bookmark"
+                           title="Permalink to PySB v1.1.0 Released">PySB v1.1.0 Released</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Thu 21 April 2016</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->                <p>PySB has officially adopted semantic versioning. This means v1.1.0 includes new features as compared to v1.0.x, but is still backwards compatible so you won't have to change any of your models to upgrade to it.</p>
+<h1>New features</h1>
+<ul>
+<li>Full Python 3 compatibility. All tests pass under Python …</li></ul>
+                <a class="readmore" href="/news/pysb-v110-released">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/news/pysb-v101-released" rel="bookmark"
+                           title="Permalink to PySB v1.0.1 Released">PySB v1.0.1 Released</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Fri 06 November 2015</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->                <p>PySB v1.0.1 has been released</p>
+                <a class="readmore" href="/news/pysb-v101-released">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/news/pysb-v100-released" rel="bookmark"
+                           title="Permalink to PySB v1.0.0 Released">PySB v1.0.0 Released</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Tue 23 December 2014</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->                <p>PySB v1.0.0 has been released</p>
+                <a class="readmore" href="/news/pysb-v100-released">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+            </ol><!-- /#posts-list -->
+            </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme <a href="https://github.com/blueicefield/pelican-blueidea/">blueidea</a>, inspired by the default theme.</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

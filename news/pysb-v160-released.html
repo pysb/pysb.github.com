@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>PySB v1.6.0 Released</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="PySB Atom Feed" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <a href="/"><img src="/images/pysb-swirl.png" alt="PySB logo" /><h1>PySB  <strong>Systems biology modeling in Python</strong></a></h1>
+                <nav><ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/download">Download</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/tutorials">Tutorials</a></li>
+                    <li><a href="/support">Support</a></li>
+                </ul>
+                </nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/news/pysb-v160-released" rel="bookmark"
+           title="Permalink to PySB v1.6.0 Released">PySB v1.6.0 Released</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <span>Wed 07 March 2018</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->      <h1>New Features</h1>
+<ul>
+<li>New reversible rule operator <code>|</code>; the previous <code>&lt;&gt;</code> operator is now pending deprecation (#309)</li>
+<li>Saving and loading of <code>SimulationResult</code> objects with metadata in HDF5 format (#292)</li>
+<li>PySB now supports Kappa 4, including custom rate laws with PySB <code>Expression</code>s. Kappa 3 support has been dropped (#334)</li>
+<li>Rule pattern matching and new model test suite (#285)</li>
+<li>Model components can now be accessed as attributes (#213)</li>
+<li>Importing models from BioModels can now use either the EBI mirror (default) or the CalTech one (#325)</li>
+<li>Cython support for <code>ScipyOdeSimulator</code>; this allows efficient simulation on Python 3, where <code>weave</code> is no longer an option (#320)</li>
+</ul>
+<h1>General Improvements</h1>
+<ul>
+<li>Native Python 3 compatibility for the whole PySB codebase (#312)</li>
+<li>Internal species for tracking synthesis/degradation rules <code>__source</code> and <code>__sink</code> have been removed (#317)</li>
+<li>Specifying a pattern with a dangling bond now causes an error (#328)</li>
+<li>Simulator <code>run()</code> arguments are no longer persistent (#314)</li>
+<li>State values in patterns are now verified (#322)</li>
+<li>Frequently Asked Questions added to documentation (#331)</li>
+<li>Loading <code>CupSodaSimulator</code> no longer initializes the GPU on import; instead it wait until instantiation (#332).</li>
+<li><code>pysb.tools.sensitivity_analysis</code> code updated for compatibility with matplotlib 2.1 (#303)</li>
+<li>Improvements to <code>ScipyOdeSimulator</code>'s <code>weave</code> interface, including better control of console output (#299) and ensuring C code is cacheable when unicode variable names are used (#301).</li>
+<li>Graph objects in the Kappa interface (e.g. contact maps) are now returned as <code>networkx</code> graphs, not <code>pygraphviz</code>. <code>pygraphviz</code> support for reading .dot files in the Kappa interface has been replaced with <code>pydot</code> (#335).</li>
+</ul>
+<h1>Bugfixes</h1>
+<ul>
+<li>Fix component rename when not using Self Exporter (#321)</li>
+<li><code>ComplexPattern.__call__</code> now raises a <code>DuplicateMonomerError</code> when duplicate monomers are present (#323)</li>
+<li>Fixes for <code>ComplexPattern.is_concrete()</code> (#307)</li>
+<li>Reversible <code>Rule.is_synth()</code> and <code>is_deg()</code> now work for reversible patterns (#326)</li>
+<li>Fix error when running Tyson model with <code>CupSodaSimulator</code> (#332)</li>
+</ul>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme <a href="https://github.com/blueicefield/pelican-blueidea/">blueidea</a>, inspired by the default theme.</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
