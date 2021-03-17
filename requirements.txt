@@ -3,6 +3,6 @@ ghp-import>=0.4.1
 markdown
 jupyter
 ipython
-nbconvert
+nbconvert<6
 beautifulsoup4
 pelican-jupyter
