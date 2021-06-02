@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Download PySB</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="PySB Atom Feed" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <a href="/"><img src="/images/pysb-swirl.png" alt="PySB logo" /><h1>PySB  <strong>Systems biology modeling in Python</strong></a></h1>
+                <nav><ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/download">Download</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/tutorials">Tutorials</a></li>
+                    <li><a href="/support">Support</a></li>
+                </ul>
+                </nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+    <h1 class="entry-title">Download PySB</h1>
+    
+    <p>There are two different ways to install and use PySB:</p>
+<ol class="arabic">
+<li><p class="first"><strong>Install PySB natively on your computer (recommended).</strong></p>
+<p><em>OR</em></p>
+</li>
+<li><p class="first"><strong>Download a Docker container with PySB and Jupyter Notebook.</strong> If you
+are familiar with <a class="reference external" href="http://www.docker.org/">Docker</a>, PySB can be installed from the Docker
+Hub by typing <cite>docker pull pysb/pysb</cite>. Further details are
+below.</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><strong>Need Help?</strong>
+If you run into any problems with installation, please visit our chat room:
+<a class="reference external" href="https://gitter.im/pysb/pysb">https://gitter.im/pysb/pysb</a></p>
+</div>
+<div class="section" id="option-1-install-pysb-natively-on-your-computer">
+<h2>Option 1: Install PySB natively on your computer</h2>
+<ol class="arabic">
+<li><p class="first"><strong>Install Anaconda</strong></p>
+<p>Our recommended approach is to use <a class="reference external" href="https://www.anaconda.com/distribution/">Anaconda</a>, which is a distribution of
+Python containing most of the numeric and scientific software needed to
+get started. If you are a Mac or Linux user, have used Python before and
+are comfortable using <tt class="docutils literal">pip</tt> to install software, you may want to skip
+this step and use your existing Python installation (see notes in the
+following step).</p>
+<p>Anaconda has a simple graphical installer which can be downloaded from
+<a class="reference external" href="https://www.anaconda.com/distribution/">https://www.anaconda.com/distribution/</a> - select your operating system
+and download the 64 bit version. Both Python 2.7 and 3.6 are supported. The
+default installer options are usually appropriate.</p>
+</li>
+<li><p class="first"><strong>Install PySB</strong></p>
+<p>The installation is very straightforward with <tt class="docutils literal">conda</tt> - type the
+following in a terminal:</p>
+<blockquote>
+<p><cite>conda install -c alubbock pysb</cite></p>
+</blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You may wish to use the Anaconda prompt, which sets up the Anaconda
+paths automatically, rather than the standard command prompt or
+terminal on your operating system. Otherwise, you may have to use the
+full path to the <tt class="docutils literal">conda</tt> command each time, and may end up using
+the system version of Python, rather than the Anaconda one.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You can also install PySB using <tt class="docutils literal">pip</tt>, but in that case you will
+need to manually install <a class="reference external" href="http://www.bionetgen.org/">BioNetGen</a> into the default path for your
+platform (/usr/local/share/BioNetGen on Mac and Linux, c:\Program
+Files\BioNetGen on Windows), or set the <cite>BNGPATH</cite> environment
+variable to the BioNetGen path on your machine.</p>
+</div>
+</li>
+<li><p class="first"><strong>Start Python and PySB</strong></p>
+<p>If you installed Python using <a class="reference external" href="https://www.anaconda.com/distribution/">Anaconda</a> on Windows, search for and select
+<tt class="docutils literal">IPython</tt> from your Start Menu (Windows). Otherwise, open a terminal
+and type <tt class="docutils literal">python</tt> to get started (or <tt class="docutils literal">ipython</tt>, if installed).</p>
+<p>You will then be at the Python prompt. Type <tt class="docutils literal">import pysb</tt> to try
+loading PySB. If no error messages appear and the next Python prompt
+appears, you have succeeded in installing PySB!</p>
+</li>
+</ol>
+<div class="section" id="recommended-additional-software">
+<h3>Recommended additional software</h3>
+<p>The following software is not required for the basic operation of PySB, but
+provides extra capabilities and features when installed.</p>
+<ul>
+<li><p class="first"><a class="reference external" href="http://cython.org/">cython</a> or <a class="reference external" href="https://pypi.python.org/pypi/weave">weave</a>
+Cython is a package for compiling Python code into C code on the fly. It
+is used by PySB's <cite>ScipyOdeSimulator</cite> to greatly improve the
+speed of ODE integration. PySB will detect and use Cython automatically,
+if available. To install with Anaconda, type
+<cite>conda install cython</cite>.
+With pip, type <cite>pip install cython</cite>.</p>
+<p>Weave performs the same job as Cython, and is slightly faster in some
+circumstances. It is only available on Python 2. To install with Anaconda,
+type <cite>conda install -c conda-forge weave</cite>. With pip, type
+<cite>pip install weave</cite>.</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://matplotlib.org/">matplotlib</a></p>
+<p>This Python package allows you to plot the results of your simulations. It
+is not a hard requirement of PySB but many of the example scripts use it.
+<a class="reference external" href="http://matplotlib.org/">matplotlib</a> is included with <a class="reference external" href="https://www.anaconda.com/distribution/">Anaconda</a>. Otherwise, it can be installed
+with <cite>pip install matplotlib</cite>.</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://pandas.pydata.org/">pandas</a></p>
+<p>This Python package provides extra capabilities for examining large
+numerical datasets, with statistical summaries and database-like
+manipulation capabilities. It is not a hard requirement of PySB, but it is a
+useful addition, particularly with large sets of simulation results.
+<a class="reference external" href="http://pandas.pydata.org/">pandas</a> is included with <a class="reference external" href="https://www.anaconda.com/distribution/">Anaconda</a>. Otherwise, it can be installed with
+<cite>pip install pandas</cite>.</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://ipython.org/">IPython</a></p>
+<p>An alternate interactive Python shell, much improved over the standard one.
+<a class="reference external" href="http://ipython.org/">IPython</a> is included with <a class="reference external" href="https://www.anaconda.com/distribution/">Anaconda</a>. Otherwise, it can be installed
+with <cite>pip install ipython</cite>.</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://www.kappalanguage.org/">Kappa</a> 4.0</p>
+<p>Kappa is a rule-based modeling tool that can produce several useful model
+visualizations or perform an agent-based model simulation. PySB optionally
+interfaces with its <em>KaSim</em> simulator and <em>KaSa</em> static analyzer.</p>
+<p>To install Kappa for PySB use, put the <tt class="docutils literal">KaSim</tt> executable (and optionally
+<tt class="docutils literal">KaSa</tt> if you have it) in <tt class="docutils literal">/usr/local/share/KaSim</tt> (Mac or Linux) or
+<tt class="docutils literal"><span class="pre">C:\\Program</span> <span class="pre">Files\\KaSim</span></tt> (Windows). If you would like to put it somewhere
+else, set the <tt class="docutils literal">KAPPAPATH</tt> environment variable to the full path to the
+folder containing the <tt class="docutils literal">KaSim</tt> and <tt class="docutils literal">KaSa</tt> executables. Note that if you
+have downloaded the official binary build of KaSim, it will be named something
+like <tt class="docutils literal">KaSim_4.0_winxp.exe</tt> or <tt class="docutils literal">KaSim_4.0_mac_OSX_10.10</tt>. Regardless of
+where you install it, you will need to rename the file to strip out the
+version and operating system information so that you have just <tt class="docutils literal">KaSim.exe</tt>
+(Windows) or <tt class="docutils literal">KaSim</tt> (Mac or Linux).</p>
+<p>On Anaconda, Kappa can be installed with
+<cite>conda install -c alubbock kappa</cite>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="option-2-docker-container-with-pysb-and-jupyter-notebook">
+<h2>Option 2: Docker container with PySB and Jupyter Notebook</h2>
+<div class="section" id="background">
+<h3>Background</h3>
+<p><a class="reference external" href="http://www.docker.org/">Docker</a> is a virtualization platform which encapsulates software within a
+container. It can be thought of like a virtual machine, only it contains
+just the application software (and supporting dependencies) and not a full
+operating system stack.</p>
+</div>
+<div class="section" id="install-docker-and-the-pysb-software-stack">
+<h3>Install Docker and the PySB software stack</h3>
+<ol class="arabic">
+<li><p class="first"><strong>Install Docker</strong></p>
+<p>To use PySB with Docker, first you'll need to install Docker, which can be
+obtained from <a class="reference external" href="https://www.docker.com/community-edition#/download">https://www.docker.com/community-edition#/download</a> (Windows
+and Mac). Linux users should use their package manager (e.g. <tt class="docutils literal"><span class="pre">apt-get</span></tt>).</p>
+</li>
+<li><p class="first"><strong>Download the PySB software stack from the Docker Hub</strong></p>
+<p>On the command line, this requires a single command:</p>
+<blockquote>
+<p><cite>docker pull pysb/pysb</cite></p>
+</blockquote>
+<p>This only needs to be done once, or when software updates are required.</p>
+</li>
+<li><p class="first"><strong>Start the container</strong></p>
+<p>Start the Docker container with the following command (on Linux, the command
+may need to be prefixed with <tt class="docutils literal">sudo</tt>):</p>
+<blockquote>
+<p><cite>docker run -it --rm -p 8888:8888 pysb/pysb</cite></p>
+</blockquote>
+<p>This starts the PySB Docker container with Jupyter notebook and connects it
+to port 8888.</p>
+</li>
+<li><p class="first"><strong>Open Jupyter Notebook in a web browser</strong></p>
+<p>Open a web browser of your choice and enter the address
+<a class="reference external" href="http://localhost:8888">http://localhost:8888</a> in the address bar. You should see a web page with the
+Jupyter notebook logo. Several example and tutorial notebooks are included
+to get you started.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="important-notes-for-docker-installations">
+<h3>Important notes for Docker installations</h3>
+<p>To see graphics from matplotlib within the Jupyter Notebook, you'll need to
+set the following option in your notebooks before calling any plot commands:</p>
+<div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+<p>Any Jupyter notebooks created will be saved in the container itself, rather
+than on the host computer. Notebooks can be downloaded using the Jupyter
+interface, or a directory on the host computer can be shared with the
+container.</p>
+<p>The PySB container builds on the Jupyter SciPy notebook, which contains
+further information on the options available for the container (such
+as sharing a directory with the host computer to preserve notebooks,
+setting a password and more). Documentation from the Jupyter project is
+available at
+<a class="reference external" href="https://hub.docker.com/r/jupyter/scipy-notebook/">https://hub.docker.com/r/jupyter/scipy-notebook/</a></p>
+</div>
+</div>
+
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme <a href="https://github.com/blueicefield/pelican-blueidea/">blueidea</a>, inspired by the default theme.</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

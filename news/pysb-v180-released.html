@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>PySB v1.8.0 Released</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="PySB Atom Feed" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <a href="/"><img src="/images/pysb-swirl.png" alt="PySB logo" /><h1>PySB  <strong>Systems biology modeling in Python</strong></a></h1>
+                <nav><ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/download">Download</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/tutorials">Tutorials</a></li>
+                    <li><a href="/support">Support</a></li>
+                </ul>
+                </nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/news/pysb-v180-released" rel="bookmark"
+           title="Permalink to PySB v1.8.0 Released">PySB v1.8.0 Released</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <span>Fri 19 October 2018</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->      <h1>New Features</h1>
+<ul>
+<li>Model component names will now tab-complete when accessed as part of a ComponentSet (<a href="https://github.com/pysb/pysb/pull/380">#380</a></li>
+</ul>
+<h1>General Improvements</h1>
+<ul>
+<li>Keyword arguments to <code>__init__</code> are now validated by <code>ScipyOdeSimulator</code> (<a href="https://github.com/pysb/pysb/pull/381">#381</a>), <code>StochKitSimulator</code> (<a href="https://github.com/pysb/pysb/pull/382">#382</a>), and <code>CupSodaSimulator</code> (<a href="https://github.com/pysb/pysb/pull/383">#383</a>)</li>
+<li>BioNetGen: Extra functions are now supported, including <code>And</code>, <code>Or</code>, <code>Floor</code>, <code>Ceiling</code>, <code>Min</code>, <code>Max</code>, <code>Abs</code>, and the constants <code>pi</code> and <code>e</code> (<a href="https://github.com/pysb/pysb/pull/373">#373</a>)</li>
+<li>SBML exporter: Observables and Expressions are now set by AssignmentRules (<a href="https://github.com/pysb/pysb/pull/370">#370</a> and <a href="https://github.com/pysb/pysb/pull/372">#372</a>) </li>
+</ul>
+<h1>Bugfixes</h1>
+<ul>
+<li>Fix Simulator initials_dict when set by array (<a href="https://github.com/pysb/pysb/pull/377">#377</a>)</li>
+<li>Fix BNGSimulator when tspan doesn't start at 0 (<a href="https://github.com/pysb/pysb/pull/379">#379</a>)</li>
+<li>Set a default module name for components when <code>__name__</code> isn't set (<a href="https://github.com/pysb/pysb/pull/374">#374</a>)</li>
+<li>Fix StochKit export on Python 3 when lxml is installed (<a href="https://github.com/pysb/pysb/pull/375">#375</a>)</li>
+<li>Fix serialization of components that do not have a model weakref set (<a href="https://github.com/pysb/pysb/pull/386">#386</a>)</li>
+<li>Respect <code>BngSimulator</code> cleanup flag in <code>__init__</code> (<a href="https://github.com/pysb/pysb/pull/385">#385</a>)</li>
+</ul>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme <a href="https://github.com/blueicefield/pelican-blueidea/">blueidea</a>, inspired by the default theme.</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

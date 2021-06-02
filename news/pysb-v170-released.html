@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>PySB v1.7.0 Released</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="PySB Atom Feed" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <a href="/"><img src="/images/pysb-swirl.png" alt="PySB logo" /><h1>PySB  <strong>Systems biology modeling in Python</strong></a></h1>
+                <nav><ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/download">Download</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/tutorials">Tutorials</a></li>
+                    <li><a href="/support">Support</a></li>
+                </ul>
+                </nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/news/pysb-v170-released" rel="bookmark"
+           title="Permalink to PySB v1.7.0 Released">PySB v1.7.0 Released</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <span>Mon 23 July 2018</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->      <h1>New Features</h1>
+<ul>
+<li>Python 3.7 now officially supported (in addition to 3.6 and 2.7) (#368)</li>
+<li>Filtering for ComponentSets (<a href="https://pysb.readthedocs.io/en/stable/modules/core.html#pysb.core.ComponentSet.filter">documentation</a>) (#340)</li>
+<li>SBML export now uses <a href="https://pypi.org/project/python-libsbml/">LibSBML</a> and supports compartments and expressions (#367)</li>
+<li>On demand observable trajectories without adding them to the model (<a href="https://pysb.readthedocs.io/en/stable/modules/simulator.html#pysb.simulator.SimulationResult.observable">documentation</a>) (#337)</li>
+</ul>
+<h1>General Improvements</h1>
+<ul>
+<li>The <code>&lt;&gt;</code> operator for reversible rules in Python 2.7 has been formally deprecated. Use <code>|</code> instead (#344)</li>
+<li>Products of synthesis rules are enforced to be concrete (#354)</li>
+<li>Monomers' site and state names are validated upon definition (#352)</li>
+<li>Expressions now must be created from sympy.Expr. Previously, unwrapped integers and floats were accepted (#350)</li>
+<li>Capture BNG errors into PySB exception messages (#363)</li>
+<li>Show line numbers in the debug log for BioNetGen language files to aid interpreting BNG error messages (#365)</li>
+<li>Python model exporter now produces Python 3.x compatible code (#366)</li>
+<li>Recover from non-functional Cython/weave compilers on Windows (#353)</li>
+<li>Better tests for PySB exporters, and explicit <code>ExpressionsNotSupported</code> and <code>CompartmentsNotSupported</code> exceptions where applicable (#357)</li>
+</ul>
+<h1>Bugfixes</h1>
+<ul>
+<li>Fix export to BNG of expressions containing <code>log</code> (#361)</li>
+<li>Fix Kappa export when using parameters with overlapping (substring) names (#346)</li>
+</ul>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme <a href="https://github.com/blueicefield/pelican-blueidea/">blueidea</a>, inspired by the default theme.</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

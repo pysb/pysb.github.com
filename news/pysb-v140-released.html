@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>PySB v1.4.0 Released</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="PySB Atom Feed" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <a href="/"><img src="/images/pysb-swirl.png" alt="PySB logo" /><h1>PySB  <strong>Systems biology modeling in Python</strong></a></h1>
+                <nav><ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/download">Download</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/tutorials">Tutorials</a></li>
+                    <li><a href="/support">Support</a></li>
+                </ul>
+                </nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/news/pysb-v140-released" rel="bookmark"
+           title="Permalink to PySB v1.4.0 Released">PySB v1.4.0 Released</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <span>Fri 09 June 2017</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->      <h1>New features</h1>
+<ul>
+<li><code>StochKitSimulator</code>, an interface to the stochastic simulator <a href="https://github.com/StochSS/StochKit">StochKit</a>. See <code>pysb.simulator.stochkit.StochKitSimulator</code>.</li>
+<li><code>InitialsSensitivity</code>, a tool to perform pairwise sensitivity analysis of initial conditions. See <code>pysb.tools.sensitivity_analysis.InitialSensitivity</code>. <strong>EXPERIMENTAL</strong>.</li>
+<li>Import models directly from BioModels from just their ID (BIOMDxxx... or MODELxxx...) with <code>pysb.importers.sbml.model_from_biomodels()</code>.</li>
+</ul>
+<h1>General improvements</h1>
+<ul>
+<li>Faster simulation runs for models with many expressions (~60x speedup for a 200-expression model).</li>
+<li>Improved accuracy and better error reporting when parsing SBML expressions in <code>pysb.importers.sbml</code>.</li>
+<li>The Kappa interface has been upgraded to support Kappa version 4. This also means Kappa v3 is no longer supported.</li>
+</ul>
+<h1>Bugfixes</h1>
+<ul>
+<li><code>CupSodaSimulator</code> now works on Python 3.</li>
+<li>Simulators now fully respect parameter value overrides for initial condition parameters (#252).</li>
+<li>Simulators now allow overriding a non-zero initial condition to zero (#251).</li>
+<li>Simulators no longer have problems with parameter names that are unicode objects (still only ASCII characters are allowed, though) (#278).</li>
+<li>Model components with the same name as a top-level sympy object (anything you would see in <code>from sympy import *</code>) no longer cause errors when simulating (#259).</li>
+<li>Applying a compartment condition to a MonomerPattern that already has one now correctly raises an exception (#258).</li>
+<li><code>PysbFlatExporter</code> now works with compartments using inline size declarations (#210).</li>
+<li><code>ComplexPattern.is_equivalent_to</code> now correctly handles certain combinations of compartments that were previously mishandled (#257).</li>
+</ul>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme <a href="https://github.com/blueicefield/pelican-blueidea/">blueidea</a>, inspired by the default theme.</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
