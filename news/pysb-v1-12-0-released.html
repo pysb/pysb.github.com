@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>PySB v1.12.0 Released</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="PySB Atom Feed" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <a href="/"><img src="/images/pysb-swirl.png" alt="PySB logo" /><h1>PySB  <strong>Systems biology modeling in Python</strong></a></h1>
+                <nav><ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/download">Download</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/tutorials">Tutorials</a></li>
+                    <li><a href="/support">Support</a></li>
+                </ul>
+                </nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/news/pysb-v1-12-0-released" rel="bookmark"
+           title="Permalink to PySB v1.12.0 Released">PySB v1.12.0 Released</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <span>Wed 17 March 2021</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->      <p>This version of PySB supports Python 3.6-3.9. Python 2.7 is no longer supported.</p>
+<h1>New features</h1>
+<ul>
+<li>Implement reversible synthesis rules (<a href="https://github.com/pysb/pysb/pull/499">#499</a>)</li>
+</ul>
+<h1>Improvements</h1>
+<ul>
+<li>ScipyOdeSimulator speedup through refactoring, use of partial (<a href="https://github.com/pysb/pysb/pull/531">#531</a>, <a href="https://github.com/pysb/pysb/pull/483">#483</a>)</li>
+<li>Use double precision for BNG and Kappa parameters (<a href="https://github.com/pysb/pysb/pull/490">#490</a>)</li>
+<li>Allow constant expressions for compartment sizes (<a href="https://github.com/pysb/pysb/pull/525">#525</a>)</li>
+<li>Faster SimulationResult loading: use slices (<a href="https://github.com/pysb/pysb/pull/491">#491</a>)</li>
+<li>Implement BNG boolean treatment within expressions, e.g. evaluate <code>(2 &gt; 1)</code> as <code>True</code> (<a href="https://github.com/pysb/pysb/pull/494">#494</a>)</li>
+<li>Import ABC from collections.abc instead of collections for Python 3.9 compatibility (<a href="https://github.com/pysb/pysb/pull/485">#485</a>)</li>
+<li>Implement the assumption that all symbolic variables in a model only take real values. The user can specify integer and non-negative enforced assumptions about parameter values. Changes are relevant for any simplifications of symbolic expressions in the model (<a href="https://github.com/pysb/pysb/pull/475">#475</a>)</li>
+<li>Update tested Python versions on CI (<a href="https://github.com/pysb/pysb/pull/479">#479</a>)</li>
+<li>Remove weave and theano support from ScipyOdeSimulator (<a href="https://github.com/pysb/pysb/pull/482">#482</a>)</li>
+<li>Remove Python 2 support (<a href="https://github.com/pysb/pysb/pull/486">#486</a>, <a href="https://github.com/pysb/pysb/pull/487">#487</a>)</li>
+<li>Update docs with Python version support (<a href="https://github.com/pysb/pysb/pull/492">#492</a>)</li>
+<li>Update docs with stubs on calibration and PySB modules to tutorial (<a href="https://github.com/pysb/pysb/pull/509">#509</a>)</li>
+<li>Update deprecated pandas call in CupSodaSimulator (<a href="https://github.com/pysb/pysb/pull/523">#523</a>)</li>
+<li>Remove deprecated sympy.boolalg calls (<a href="https://github.com/pysb/pysb/pull/526">#526</a>)</li>
+<li>Specify Python&gt;=3.6 requirement in setup.py (<a href="https://github.com/pysb/pysb/pull/536">#536</a>)</li>
+</ul>
+<h1>Bug fixes</h1>
+<ul>
+<li>Fix sympy 1.6 compatibility (<a href="https://github.com/pysb/pysb/pull/505">#505</a>)</li>
+<li>Fix observable trajectories on HDF5 load (<a href="https://github.com/pysb/pysb/pull/502">#502</a>)</li>
+<li>Fix reading of error messages from cupSODA (<a href="https://github.com/pysb/pysb/pull/510">#510</a>)</li>
+<li>Fix SBML export with unset compartment size (<a href="https://github.com/pysb/pysb/pull/513">#513</a>)</li>
+<li>Fix eqn_mode='python' for models with local functions (<a href="https://github.com/pysb/pysb/pull/495">#495</a>)</li>
+<li>Fix typehints in core (<a href="https://github.com/pysb/pysb/pull/507">#507</a>, <a href="https://github.com/pysb/pysb/pull/520">#520</a>)</li>
+<li>Fix BNG code generation for <code>Eq</code> and <code>Ne</code> (<a href="https://github.com/pysb/pysb/pull/528">#528</a>)</li>
+<li>Fix StochKit export of certain PySB rate Expressions (<a href="https://github.com/pysb/pysb/pull/521">#521</a>)</li>
+<li>Copy annotations when creating model from base (<a href="https://github.com/pysb/pysb/pull/493">#493</a>)</li>
+<li>Fix SimulationResult loads when <code>include_obs_exprs=True</code> and model has no observables or expressions (<a href="https://github.com/pysb/pysb/pull/481">#481</a>)</li>
+<li>Fix an error when using ScipyOdeSimulator with the num_processors
+option &gt;1 (i.e. use multiprocessing) together with compiler='python' (<a href="https://github.com/pysb/pysb/pull/480">#480</a>)</li>
+<li>Fix usage of super in multiple inheritance of sympy.Symbol (<a href="https://github.com/pysb/pysb/pull/474">#474</a>)</li>
+<li>Fix readthedocs error with updated mock (<a href="https://github.com/pysb/pysb/pull/489">#489</a>)</li>
+<li>Fix slice IndexError in tutorial (<a href="https://github.com/pysb/pysb/pull/529">#529</a>)</li>
+<li>Fix tutorial typos (<a href="https://github.com/pysb/pysb/pull/511">#511</a>)</li>
+<li>Fix DeprecationWarning leading to test failure with new versions of h5py (<a href="https://github.com/pysb/pysb/pull/537">#537</a>)</li>
+</ul>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme <a href="https://github.com/blueicefield/pelican-blueidea/">blueidea</a>, inspired by the default theme.</p>
+        </footer><!-- /#contentinfo -->
+
+
+<!-- Analytics -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//lynx.lolab.xyz/";
+    _paq.push(['setTrackerUrl', u+'lynx.php']);
+    _paq.push(['setSiteId', '4']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'lynx.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Analytics --></body>
+</html>

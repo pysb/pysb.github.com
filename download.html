@@ -208,7 +208,7 @@ to get you started.</p>
 <h3>Important notes for Docker installations</h3>
 <p>To see graphics from matplotlib within the Jupyter Notebook, you'll need to
 set the following option in your notebooks before calling any plot commands:</p>
-<div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<div class="highlight"><pre><span></span>%matplotlib inline
 </pre></div>
 <p>Any Jupyter notebooks created will be saved in the container itself, rather
 than on the host computer. Notebooks can be downloaded using the Jupyter
@@ -238,5 +238,20 @@ available at
                 <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme <a href="https://github.com/blueicefield/pelican-blueidea/">blueidea</a>, inspired by the default theme.</p>
         </footer><!-- /#contentinfo -->
 
-</body>
+
+<!-- Analytics -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//lynx.lolab.xyz/";
+    _paq.push(['setTrackerUrl', u+'lynx.php']);
+    _paq.push(['setSiteId', '4']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'lynx.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Analytics --></body>
 </html>

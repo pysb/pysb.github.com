@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8" />
-        <title>PySB - Tags</title>
+        <title>PySB v1.13.0 Released</title>
         <link rel="stylesheet" href="/theme/css/main.css" />
         <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="PySB Atom Feed" />
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -40,12 +40,37 @@
                 </ul>
                 </nav>
         </header><!-- /#banner -->
-
 <section id="content" class="body">
-    <h1>Tags for PySB</h1>        <li><a href="/tag/policies">policies</a> (1)</li>
-        <li><a href="/tag/pysb-release">pysb-release</a> (25)</li>
-</section>
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/news/pysb-v1-13-0-released" rel="bookmark"
+           title="Permalink to PySB v1.13.0 Released">PySB v1.13.0 Released</a></h1>
+    </header>
 
+    <div class="entry-content">
+<footer class="post-info">
+        <span>Wed 02 June 2021</span>
+<span>| tags: <a href="/tag/pysb-release">pysb-release</a></span>
+</footer><!-- /.post-info -->      <h1>Removed features</h1>
+<ul>
+<li>Remove pure-python exporter (<a href="https://github.com/pysb/pysb/pull/543">#543</a>). The pure Python exporter was a legacy feature to export a PySB model for use without PySB itself. We recommend using a virtual environment or container as a better alternative (e.g. Ananconda, Docker). Users requiring this feature who cannot use alternatives could copy/paste the exporter code and use it standalone, or use PySB v1.12 for the export process.</li>
+</ul>
+<h1>Improvements</h1>
+<ul>
+<li>Docs: make readthedocs fail on warning (<a href="https://github.com/pysb/pysb/pull/545">#545</a>)</li>
+<li>Improve documentation on MatchOnce keyword (<a href="https://github.com/pysb/pysb/pull/538">#538</a>)</li>
+</ul>
+<h1>Bug fixes</h1>
+<ul>
+<li>Docs: Fix sphinx mocks, include JSON export (<a href="https://github.com/pysb/pysb/pull/544">#544</a>)</li>
+<li>Fix altered matplotlib API call (<a href="https://github.com/pysb/pysb/pull/541">#541</a>)</li>
+<li>Fix Anaconda download link in docs (<a href="https://github.com/pysb/pysb/pull/542">#542</a>)</li>
+</ul>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
         <section id="extras" class="body">
                 <div class="social">
                         <h2>social</h2>
