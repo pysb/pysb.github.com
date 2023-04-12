@@ -45,8 +45,11 @@ for release in data:
         release_date=release_date.isoformat()[0:10],
         release_notes=release_notes
     )
+    # Hyperlink usernames
+    page, _ = re.subn('(\s+)@(\w+)', '\\1[@\\2](https://github.com/\\2)', page)
     # Hyperlink to github PRs
-    page, _ = re.subn('#(\d+)', '[#\\1](https://github.com/pysb/pysb/pull/\\1)', page)
+    page, _ = re.subn('https://github.com/pysb/pysb/pull/(\d+)', '[#\\1](https://github.com/pysb/pysb/pull/\\1)', page)
+    page, _ = re.subn('(\s+)#(\d+)', '\\1[#\\2](https://github.com/pysb/pysb/pull/\\2)', page)
 
     with open(tgt_filename, 'w') as f:
         f.write(page)
