@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>PySB</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2024-02-21T00:00:00-06:00</updated><subtitle>Systems biology modeling in Python</subtitle><entry><title>PySB v1.16.0 Released</title><link href="/news/pysb-v1-16-0-released" rel="alternate"></link><published>2024-02-21T00:00:00-06:00</published><updated>2024-02-21T00:00:00-06:00</updated><author><name></name></author><id>tag:None,2024-02-21:/news/pysb-v1-16-0-released</id><summary type="html">&lt;h2&gt;Improvements&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PySB</title><link href="/" rel="alternate"/><link href="/feeds/all.atom.xml" rel="self"/><id>/</id><updated>2026-02-17T00:00:00-06:00</updated><subtitle>Systems biology modeling in Python</subtitle><entry><title>PySB v1.17.0 Released</title><link href="/news/pysb-v1-17-0-released" rel="alternate"/><published>2026-02-17T00:00:00-06:00</published><updated>2026-02-17T00:00:00-06:00</updated><author><name/></author><id>tag:None,2026-02-17:/news/pysb-v1-17-0-released</id><summary type="html">&lt;p&gt;This version of PySB is compatible with Python 3.11+.&lt;/p&gt;
+&lt;h2&gt;Improvements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix installation, dot compatibility and remove leftover distutils code by &lt;a href="https://github.com/FFroehlich"&gt;@FFroehlich&lt;/a&gt; in &lt;a href="https://github.com/pysb/pysb/pull/608"&gt;#608&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PySB now supports numpy 2.0  - Adapt to numpy 2.0 by &lt;a href="https://github.com/bgyori"&gt;@bgyori&lt;/a&gt; in &lt;a href="https://github.com/pysb/pysb/pull/595"&gt;#595&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Enable pattern matching with compartments by &lt;a href="https://github.com/FFroehlich"&gt;@FFroehlich&lt;/a&gt; in &lt;a href="https://github.com/pysb/pysb/pull/570"&gt;#570&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support PyBioNetGen …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;This version of PySB is compatible with Python 3.11+.&lt;/p&gt;
+&lt;h2&gt;Improvements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix installation, dot compatibility and remove leftover distutils code by &lt;a href="https://github.com/FFroehlich"&gt;@FFroehlich&lt;/a&gt; in &lt;a href="https://github.com/pysb/pysb/pull/608"&gt;#608&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PySB now supports numpy 2.0  - Adapt to numpy 2.0 by &lt;a href="https://github.com/bgyori"&gt;@bgyori&lt;/a&gt; in &lt;a href="https://github.com/pysb/pysb/pull/595"&gt;#595&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Enable pattern matching with compartments by &lt;a href="https://github.com/FFroehlich"&gt;@FFroehlich&lt;/a&gt; in &lt;a href="https://github.com/pysb/pysb/pull/570"&gt;#570&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support PyBioNetGen provided BNGPATH by &lt;a href="https://github.com/FFroehlich"&gt;@FFroehlich&lt;/a&gt; in &lt;a href="https://github.com/pysb/pysb/pull/600"&gt;#600&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support for explicit time dependency in expressions by &lt;a href="https://github.com/FFroehlich"&gt;@FFroehlich&lt;/a&gt; in &lt;a href="https://github.com/pysb/pysb/pull/601"&gt;#601&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Other changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Disable GitHub Actions fail-fast by &lt;a href="https://github.com/jmuhlich"&gt;@jmuhlich&lt;/a&gt; in &lt;a href="https://github.com/pysb/pysb/pull/587"&gt;#587&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: CI failures with updated BNG/NFsim by &lt;a href="https://github.com/alubbock"&gt;@alubbock&lt;/a&gt; in &lt;a href="https://github.com/pysb/pysb/pull/589"&gt;#589&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Switch MacOS CI runner to ARM by &lt;a href="https://github.com/jmuhlich"&gt;@jmuhlich&lt;/a&gt; in &lt;a href="https://github.com/pysb/pysb/pull/588"&gt;#588&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Resolve test failures caused by NumPy update by &lt;a href="https://github.com/FFroehlich"&gt;@FFroehlich&lt;/a&gt; in &lt;a href="https://github.com/pysb/pysb/pull/603"&gt;#603&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: https://github.com/pysb/pysb/compare/v1.16.0...v1.17.0&lt;/p&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.16.0 Released</title><link href="/news/pysb-v1-16-0-released" rel="alternate"/><published>2024-02-21T00:00:00-06:00</published><updated>2024-02-21T00:00:00-06:00</updated><author><name/></author><id>tag:None,2024-02-21:/news/pysb-v1-16-0-released</id><summary type="html">&lt;h2&gt;Improvements&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Pysb is now compatible with all current versions of Python up to and including 3.12.&lt;/li&gt;
 &lt;li&gt;Fix typo in documentation by &lt;a href="https://github.com/ChocolateCharlie"&gt;@ChocolateCharlie&lt;/a&gt; in &lt;a href="https://github.com/pysb/pysb/pull/575"&gt;#575&lt;/a&gt;&lt;/li&gt;
@@ -24,17 +46,17 @@
 &lt;li&gt;&lt;a href="https://github.com/ChocolateCharlie"&gt;@ChocolateCharlie&lt;/a&gt; made their first contribution in &lt;a href="https://github.com/pysb/pysb/pull/575"&gt;#575&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/penguinpee"&gt;@penguinpee&lt;/a&gt; made their first contribution in &lt;a href="https://github.com/pysb/pysb/pull/579"&gt;#579&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href="https://github.com/pysb/pysb/compare/v1.15.0...v1.16.0"&gt;https://github.com/pysb/pysb/compare/v1.15.0...v1.16.0&lt;/a&gt;&lt;/p&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.15.0 Released</title><link href="/news/pysb-v1-15-0-released" rel="alternate"></link><published>2023-04-12T00:00:00-05:00</published><updated>2023-04-12T00:00:00-05:00</updated><author><name></name></author><id>tag:None,2023-04-12:/news/pysb-v1-15-0-released</id><content type="html">&lt;h2&gt;New features&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href="https://github.com/pysb/pysb/compare/v1.15.0...v1.16.0"&gt;https://github.com/pysb/pysb/compare/v1.15.0...v1.16.0&lt;/a&gt;&lt;/p&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.15.0 Released</title><link href="/news/pysb-v1-15-0-released" rel="alternate"/><published>2023-04-12T00:00:00-05:00</published><updated>2023-04-12T00:00:00-05:00</updated><author><name/></author><id>tag:None,2023-04-12:/news/pysb-v1-15-0-released</id><content type="html">&lt;h2&gt;New features&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;CUDA and openCL SSA simulators by &lt;a href="https://github.com/JamesPino"&gt;@JamesPino&lt;/a&gt; in &lt;a href="https://github.com/pysb/pysb/pull/427"&gt;#427&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Bug fixes&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Fix numpy v1.24 compatibility by &lt;a href="https://github.com/alubbock"&gt;@alubbock&lt;/a&gt; in &lt;a href="https://github.com/pysb/pysb/pull/574"&gt;#574&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.14.0 Released</title><link href="/news/pysb-v1-14-0-released" rel="alternate"></link><published>2022-08-29T00:00:00-05:00</published><updated>2022-08-29T00:00:00-05:00</updated><author><name></name></author><id>tag:None,2022-08-29:/news/pysb-v1-14-0-released</id><summary type="html">&lt;h2&gt;New features&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.14.0 Released</title><link href="/news/pysb-v1-14-0-released" rel="alternate"/><published>2022-08-29T00:00:00-05:00</published><updated>2022-08-29T00:00:00-05:00</updated><author><name/></author><id>tag:None,2022-08-29:/news/pysb-v1-14-0-released</id><summary type="html">&lt;h2&gt;New features&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Energy modeling by &lt;a href="https://github.com/jmuhlich"&gt;@jmuhlich&lt;/a&gt; in &lt;a href="https://github.com/pysb/pysb/pull/553"&gt;#553&lt;/a&gt;
-  This adds support for BNG's energy modeling formalism. Models can now contain EnergyPatterns as well as energy-based Rules with the Arrhenius rate law parameterized by activation energy (E₀) and rate distribution (φ). Energy-based models can be simulated directly in PySB or exported to …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2&gt;New features&lt;/h2&gt;
+  This adds support for BNG's energy modeling formalism. Models can now contain EnergyPatterns as well as energy-based Rules with the Arrhenius rate law parameterized by activation energy (E₀) and rate distribution (φ). Energy-based models can be simulated directly in PySB or exported …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2&gt;New features&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Energy modeling by &lt;a href="https://github.com/jmuhlich"&gt;@jmuhlich&lt;/a&gt; in &lt;a href="https://github.com/pysb/pysb/pull/553"&gt;#553&lt;/a&gt;
   This adds support for BNG's energy modeling formalism. Models can now contain EnergyPatterns as well as energy-based Rules with the Arrhenius rate law parameterized by activation energy (E₀) and rate distribution (φ). Energy-based models can be simulated directly in PySB or exported to BNGL for use with BioNetGen-based tools.&lt;/li&gt;
@@ -48,7 +70,7 @@
 &lt;h2&gt;Bug fixes&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Fix repr() of single-monomer complexes with compartments  by &lt;a href="https://github.com/alubbock"&gt;@alubbock&lt;/a&gt; in &lt;a href="https://github.com/pysb/pysb/pull/550"&gt;#550&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.13.2 Released</title><link href="/news/pysb-v1-13-2-released" rel="alternate"></link><published>2021-12-01T00:00:00-06:00</published><updated>2021-12-01T00:00:00-06:00</updated><author><name></name></author><id>tag:None,2021-12-01:/news/pysb-v1-13-2-released</id><content type="html">&lt;h2&gt;Improvements&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.13.2 Released</title><link href="/news/pysb-v1-13-2-released" rel="alternate"/><published>2021-12-01T00:00:00-06:00</published><updated>2021-12-01T00:00:00-06:00</updated><author><name/></author><id>tag:None,2021-12-01:/news/pysb-v1-13-2-released</id><content type="html">&lt;h2&gt;Improvements&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Add pysb.pathfinder to documentation by &lt;a href="https://github.com/alubbock"&gt;@alubbock&lt;/a&gt; in &lt;a href="https://github.com/pysb/pysb/pull/548"&gt;#548&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Fix SyntaxError in FAQ by &lt;a href="https://github.com/himoto"&gt;@himoto&lt;/a&gt; in &lt;a href="https://github.com/pysb/pysb/pull/549"&gt;#549&lt;/a&gt;&lt;/li&gt;
@@ -56,8 +78,8 @@
 &lt;h2&gt;Bug fixes&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;add getnewargs_ex to Symbol, fixes &lt;a href="https://github.com/pysb/pysb/pull/551"&gt;#551&lt;/a&gt; by &lt;a href="https://github.com/FFroehlich"&gt;@FFroehlich&lt;/a&gt; in &lt;a href="https://github.com/pysb/pysb/pull/554"&gt;#554&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.13.1 Released</title><link href="/news/pysb-v1-13-1-released" rel="alternate"></link><published>2021-11-30T00:00:00-06:00</published><updated>2021-11-30T00:00:00-06:00</updated><author><name></name></author><id>tag:None,2021-11-30:/news/pysb-v1-13-1-released</id><content type="html">&lt;h2&gt;Note&lt;/h2&gt;
-&lt;p&gt;There was a packaging issue with the PyPI source distribution for this version. It has been superseded by &lt;a href="https://github.com/pysb/pysb/releases/tag/v1.13.2"&gt;v1.13.2&lt;/a&gt; which has identical content.&lt;/p&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.13.0 Released</title><link href="/news/pysb-v1-13-0-released" rel="alternate"></link><published>2021-06-02T00:00:00-05:00</published><updated>2021-06-02T00:00:00-05:00</updated><author><name></name></author><id>tag:None,2021-06-02:/news/pysb-v1-13-0-released</id><summary type="html">&lt;h1&gt;Removed features&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.13.1 Released</title><link href="/news/pysb-v1-13-1-released" rel="alternate"/><published>2021-11-30T00:00:00-06:00</published><updated>2021-11-30T00:00:00-06:00</updated><author><name/></author><id>tag:None,2021-11-30:/news/pysb-v1-13-1-released</id><content type="html">&lt;h2&gt;Note&lt;/h2&gt;
+&lt;p&gt;There was a packaging issue with the PyPI source distribution for this version. It has been superseded by &lt;a href="https://github.com/pysb/pysb/releases/tag/v1.13.2"&gt;v1.13.2&lt;/a&gt; which has identical content.&lt;/p&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.13.0 Released</title><link href="/news/pysb-v1-13-0-released" rel="alternate"/><published>2021-06-02T00:00:00-05:00</published><updated>2021-06-02T00:00:00-05:00</updated><author><name/></author><id>tag:None,2021-06-02:/news/pysb-v1-13-0-released</id><summary type="html">&lt;h1&gt;Removed features&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Remove pure-python exporter (&lt;a href="https://github.com/pysb/pysb/pull/543"&gt;#543&lt;/a&gt;). The pure Python exporter was a legacy feature to export a PySB model for use without PySB itself. We recommend using a virtual environment or container as a better alternative (e.g. Ananconda, Docker). Users requiring this feature who cannot use alternatives could copy …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h1&gt;Removed features&lt;/h1&gt;
 &lt;ul&gt;
@@ -73,7 +95,7 @@
 &lt;li&gt;Docs: Fix sphinx mocks, include JSON export (&lt;a href="https://github.com/pysb/pysb/pull/544"&gt;#544&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Fix altered matplotlib API call (&lt;a href="https://github.com/pysb/pysb/pull/541"&gt;#541&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Fix Anaconda download link in docs (&lt;a href="https://github.com/pysb/pysb/pull/542"&gt;#542&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.11.1 Released</title><link href="/news/pysb-v1-11-1-released" rel="alternate"></link><published>2021-03-17T00:00:00-05:00</published><updated>2021-03-17T00:00:00-05:00</updated><author><name></name></author><id>tag:None,2021-03-17:/news/pysb-v1-11-1-released</id><content type="html">&lt;p&gt;The only change in this release is that Python version requirements are now specified in setup.py metadata (Python 2.7, or &amp;gt;=3.5). This is anticipated to be the final PySB release to support Python 2.7.&lt;/p&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.12.0 Released</title><link href="/news/pysb-v1-12-0-released" rel="alternate"></link><published>2021-03-17T00:00:00-05:00</published><updated>2021-03-17T00:00:00-05:00</updated><author><name></name></author><id>tag:None,2021-03-17:/news/pysb-v1-12-0-released</id><summary type="html">&lt;p&gt;This version of PySB supports Python 3.6-3.9. Python 2.7 is no longer supported.&lt;/p&gt;
+&lt;/ul&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.11.1 Released</title><link href="/news/pysb-v1-11-1-released" rel="alternate"/><published>2021-03-17T00:00:00-05:00</published><updated>2021-03-17T00:00:00-05:00</updated><author><name/></author><id>tag:None,2021-03-17:/news/pysb-v1-11-1-released</id><content type="html">&lt;p&gt;The only change in this release is that Python version requirements are now specified in setup.py metadata (Python 2.7, or &amp;gt;=3.5). This is anticipated to be the final PySB release to support Python 2.7.&lt;/p&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.12.0 Released</title><link href="/news/pysb-v1-12-0-released" rel="alternate"/><published>2021-03-17T00:00:00-05:00</published><updated>2021-03-17T00:00:00-05:00</updated><author><name/></author><id>tag:None,2021-03-17:/news/pysb-v1-12-0-released</id><summary type="html">&lt;p&gt;This version of PySB supports Python 3.6-3.9. Python 2.7 is no longer supported.&lt;/p&gt;
 &lt;h1&gt;New features&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Implement reversible synthesis rules (&lt;a href="https://github.com/pysb/pysb/pull/499"&gt;#499&lt;/a&gt;)&lt;/li&gt;
@@ -125,7 +147,7 @@ option &amp;gt;1 (i.e. use multiprocessing) together with compiler='python' (&lt
 &lt;li&gt;Fix slice IndexError in tutorial (&lt;a href="https://github.com/pysb/pysb/pull/529"&gt;#529&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Fix tutorial typos (&lt;a href="https://github.com/pysb/pysb/pull/511"&gt;#511&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Fix DeprecationWarning leading to test failure with new versions of h5py (&lt;a href="https://github.com/pysb/pysb/pull/537"&gt;#537&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.11.0 Released</title><link href="/news/pysb-v1-11-0-released" rel="alternate"></link><published>2019-11-13T00:00:00-06:00</published><updated>2019-11-13T00:00:00-06:00</updated><author><name></name></author><id>tag:None,2019-11-13:/news/pysb-v1-11-0-released</id><summary type="html">&lt;h1&gt;New features&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.11.0 Released</title><link href="/news/pysb-v1-11-0-released" rel="alternate"/><published>2019-11-13T00:00:00-06:00</published><updated>2019-11-13T00:00:00-06:00</updated><author><name/></author><id>tag:None,2019-11-13:/news/pysb-v1-11-0-released</id><summary type="html">&lt;h1&gt;New features&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;JSON model import and export (&lt;a href="https://github.com/pysb/pysb/pull/469"&gt;#469&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
@@ -149,14 +171,14 @@ option &amp;gt;1 (i.e. use multiprocessing) together with compiler='python' (&lt
 &lt;ul&gt;
 &lt;li&gt;Fixes for importing certain BNGL and SBML models which previously failed to import (&lt;a href="https://github.com/pysb/pysb/pull/470"&gt;#470&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Fix &lt;code&gt;SimulationResult.load()&lt;/code&gt; for HDF5 files saved with PySB &amp;lt;1.10, which gave a pickle error when loading on PySB 1.10. Such HDF5 files should be re-saved in order to use the new JSON model format, which should be more durable across PySB versions.&lt;/li&gt;
-&lt;/ul&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.10.0 Released</title><link href="/news/pysb-v1-10-0-released" rel="alternate"></link><published>2019-10-16T00:00:00-05:00</published><updated>2019-10-16T00:00:00-05:00</updated><author><name></name></author><id>tag:None,2019-10-16:/news/pysb-v1-10-0-released</id><summary type="html">&lt;h1&gt;New features&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.10.0 Released</title><link href="/news/pysb-v1-10-0-released" rel="alternate"/><published>2019-10-16T00:00:00-05:00</published><updated>2019-10-16T00:00:00-05:00</updated><author><name/></author><id>tag:None,2019-10-16:/news/pysb-v1-10-0-released</id><summary type="html">&lt;h1&gt;New features&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Local functions (&lt;a href="https://github.com/pysb/pysb/pull/412"&gt;#412&lt;/a&gt;, &lt;a href="https://github.com/pysb/pysb/pull/464"&gt;#464&lt;/a&gt;) &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Local functions allow PySB expressions to accept a tagged &lt;code&gt;MonomerPattern&lt;/code&gt; or &lt;code&gt;ComplexPattern&lt;/code&gt; as an argument. For example, in the following snippet, &lt;code&gt;A&lt;/code&gt; synthesizes &lt;code&gt;C&lt;/code&gt; with rate dependent on bound &lt;code&gt;B&lt;/code&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;  &lt;span class="n"&gt;Observable&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;AB_motif&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="n"&gt;B&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
   &lt;span class="n"&gt;Tag&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;x&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-  &lt;span class="n"&gt;Expression&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;f_synth …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h1&gt;New features&lt;/h1&gt;
+  &lt;span class="n"&gt;Expression&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;f_synth&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;k_synthC&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;AB_motif …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h1&gt;New features&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Local functions (&lt;a href="https://github.com/pysb/pysb/pull/412"&gt;#412&lt;/a&gt;, &lt;a href="https://github.com/pysb/pysb/pull/464"&gt;#464&lt;/a&gt;) &lt;/li&gt;
 &lt;/ul&gt;
@@ -190,7 +212,7 @@ component is declared before Model() (&lt;a href="https://github.com/pysb/pysb/p
 &lt;h1&gt;Miscellaneous&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Switch from coveralls to codecov (&lt;a href="https://github.com/pysb/pysb/pull/454"&gt;#454&lt;/a&gt;) &lt;/li&gt;
-&lt;/ul&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB's Python version support policy</title><link href="/news/pysbs-python-version-support-policy" rel="alternate"></link><published>2019-09-24T00:00:00-05:00</published><updated>2019-09-24T00:00:00-05:00</updated><author><name></name></author><id>tag:None,2019-09-24:/news/pysbs-python-version-support-policy</id><summary type="html">&lt;p&gt;PySB will support Python 2.7 until January 1, 2020. After that date, PySB's
+&lt;/ul&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB's Python version support policy</title><link href="/news/pysbs-python-version-support-policy" rel="alternate"/><published>2019-09-24T00:00:00-05:00</published><updated>2019-09-24T00:00:00-05:00</updated><author><name/></author><id>tag:None,2019-09-24:/news/pysbs-python-version-support-policy</id><summary type="html">&lt;p&gt;PySB will support Python 2.7 until January 1, 2020. After that date, PySB's
 major version number will be incremented (PySB 2.x). From PySB 2.x onward,
 our policy will be to support the three most recent minor versions of Python
 (most likely Python 3.6, 3.7, and …&lt;/p&gt;</summary><content type="html">&lt;p&gt;PySB will support Python 2.7 until January 1, 2020. After that date, PySB's
@@ -215,19 +237,19 @@ have comments or questions regarding this policy, please raise them
 on the relevant &lt;a href="https://github.com/pysb/pysb/issues/463"&gt;GitHub issue&lt;/a&gt;.
 Support is also available on our
 &lt;a href="https://gitter.im/pysb/pysb"&gt;Gitter chat room&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;-- The PySB Development Team&lt;/p&gt;</content><category term="news"></category><category term="policies"></category></entry><entry><title>PySB v1.9.1 Released</title><link href="/news/pysb-v191-released" rel="alternate"></link><published>2019-06-28T00:00:00-05:00</published><updated>2019-06-28T00:00:00-05:00</updated><author><name></name></author><id>tag:None,2019-06-28:/news/pysb-v191-released</id><content type="html">&lt;h1&gt;Bug fixes&lt;/h1&gt;
+&lt;p&gt;-- The PySB Development Team&lt;/p&gt;</content><category term="news"/><category term="policies"/></entry><entry><title>PySB v1.9.1 Released</title><link href="/news/pysb-v191-released" rel="alternate"/><published>2019-06-28T00:00:00-05:00</published><updated>2019-06-28T00:00:00-05:00</updated><author><name/></author><id>tag:None,2019-06-28:/news/pysb-v191-released</id><content type="html">&lt;h1&gt;Bug fixes&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Fix BngSimulator when specifying parameters to change initial conditions (&lt;a href="https://github.com/pysb/pysb/pull/450"&gt;#450&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1&gt;Miscellaneous&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Use Anaconda package of LibSBML on Python 3.7 for testing on Travis (&lt;a href="https://github.com/pysb/pysb/pull/448"&gt;#448&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.9.0 Released</title><link href="/news/pysb-v190-released" rel="alternate"></link><published>2019-05-10T00:00:00-05:00</published><updated>2019-05-10T00:00:00-05:00</updated><author><name></name></author><id>tag:None,2019-05-10:/news/pysb-v190-released</id><summary type="html">&lt;h1&gt;New Features&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.9.0 Released</title><link href="/news/pysb-v190-released" rel="alternate"/><published>2019-05-10T00:00:00-05:00</published><updated>2019-05-10T00:00:00-05:00</updated><author><name/></author><id>tag:None,2019-05-10:/news/pysb-v190-released</id><summary type="html">&lt;h1&gt;New Features&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;MultiState&lt;/code&gt; capability, which enables a single &lt;code&gt;Monomer&lt;/code&gt; site to be specified with multiple states (&lt;a href="https://pysb.readthedocs.io/en/stable/modules/core.html#pysb.core.MultiState"&gt;documentation&lt;/a&gt;) (&lt;a href="https://github.com/pysb/pysb/pull/410"&gt;#410&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;ScipyOdeSimulator&lt;/code&gt; multiprocessing capability, using &lt;code&gt;n_processors&lt;/code&gt; argument (&lt;a href="http://docs.pysb.org/en/stable/modules/simulator.html#pysb.simulator.ScipyOdeSimulator.run"&gt;documentation&lt;/a&gt;) (&lt;a href="https://github.com/pysb/pysb/pull/395"&gt;#395&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Multi-GPU simulations and chunking support (split large simulation sets into GPU-sized blocks) for &lt;code&gt;CupSodaSimulator&lt;/code&gt; (&lt;a href="https://github.com/pysb/pysb/pull/409"&gt;#409&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Sensitivity analysis class can now work for model …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h1&gt;New Features&lt;/h1&gt;
+&lt;li&gt;Sensitivity analysis class can now work for model parameter …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h1&gt;New Features&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;MultiState&lt;/code&gt; capability, which enables a single &lt;code&gt;Monomer&lt;/code&gt; site to be specified with multiple states (&lt;a href="https://pysb.readthedocs.io/en/stable/modules/core.html#pysb.core.MultiState"&gt;documentation&lt;/a&gt;) (&lt;a href="https://github.com/pysb/pysb/pull/410"&gt;#410&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;ScipyOdeSimulator&lt;/code&gt; multiprocessing capability, using &lt;code&gt;n_processors&lt;/code&gt; argument (&lt;a href="http://docs.pysb.org/en/stable/modules/simulator.html#pysb.simulator.ScipyOdeSimulator.run"&gt;documentation&lt;/a&gt;) (&lt;a href="https://github.com/pysb/pysb/pull/395"&gt;#395&lt;/a&gt;)&lt;/li&gt;
@@ -264,14 +286,14 @@ Support is also available on our
 &lt;h1&gt;Deprecations&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;ScipyOdeSimulator's theano backend (&lt;a href="https://github.com/pysb/pysb/pull/428"&gt;#428&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.8.1 Released</title><link href="/news/pysb-v181-released" rel="alternate"></link><published>2018-12-10T00:00:00-06:00</published><updated>2018-12-10T00:00:00-06:00</updated><author><name></name></author><id>tag:None,2018-12-10:/news/pysb-v181-released</id><content type="html">&lt;h1&gt;Bugfixes&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.8.1 Released</title><link href="/news/pysb-v181-released" rel="alternate"/><published>2018-12-10T00:00:00-06:00</published><updated>2018-12-10T00:00:00-06:00</updated><author><name/></author><id>tag:None,2018-12-10:/news/pysb-v181-released</id><content type="html">&lt;h1&gt;Bugfixes&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Fix path detection for external tools in new Anaconda releases &lt;a href="https://github.com/pysb/pysb/pull/394"&gt;(#394)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Fix errors in tutorials and example models &lt;a href="https://github.com/pysb/pysb/pull/392"&gt;(#392)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Fix error message in ScipyOdeSimulator referring to renamed kwarg &lt;a href="https://github.com/pysb/pysb/pull/391"&gt;(#391)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Fix package name for libsbml in setup.py &lt;a href="https://github.com/pysb/pysb/pull/390"&gt;(#390)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Tests: Fix Python 3.7 libsbml installation on travis &lt;a href="https://github.com/pysb/pysb/pull/388"&gt;(#388)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.8.0 Released</title><link href="/news/pysb-v180-released" rel="alternate"></link><published>2018-10-19T00:00:00-05:00</published><updated>2018-10-19T00:00:00-05:00</updated><author><name></name></author><id>tag:None,2018-10-19:/news/pysb-v180-released</id><summary type="html">&lt;h1&gt;New Features&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.8.0 Released</title><link href="/news/pysb-v180-released" rel="alternate"/><published>2018-10-19T00:00:00-05:00</published><updated>2018-10-19T00:00:00-05:00</updated><author><name/></author><id>tag:None,2018-10-19:/news/pysb-v180-released</id><summary type="html">&lt;h1&gt;New Features&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Model component names will now tab-complete when accessed as part of a ComponentSet (&lt;a href="https://github.com/pysb/pysb/pull/380"&gt;#380&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -296,7 +318,7 @@ Support is also available on our
 &lt;li&gt;Fix StochKit export on Python 3 when lxml is installed (&lt;a href="https://github.com/pysb/pysb/pull/375"&gt;#375&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Fix serialization of components that do not have a model weakref set (&lt;a href="https://github.com/pysb/pysb/pull/386"&gt;#386&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Respect &lt;code&gt;BngSimulator&lt;/code&gt; cleanup flag in &lt;code&gt;__init__&lt;/code&gt; (&lt;a href="https://github.com/pysb/pysb/pull/385"&gt;#385&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.7.0 Released</title><link href="/news/pysb-v170-released" rel="alternate"></link><published>2018-07-23T00:00:00-05:00</published><updated>2018-07-23T00:00:00-05:00</updated><author><name></name></author><id>tag:None,2018-07-23:/news/pysb-v170-released</id><summary type="html">&lt;h1&gt;New Features&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.7.0 Released</title><link href="/news/pysb-v170-released" rel="alternate"/><published>2018-07-23T00:00:00-05:00</published><updated>2018-07-23T00:00:00-05:00</updated><author><name/></author><id>tag:None,2018-07-23:/news/pysb-v170-released</id><summary type="html">&lt;h1&gt;New Features&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Python 3.7 now officially supported (in addition to 3.6 and 2.7) (#368)&lt;/li&gt;
 &lt;li&gt;Filtering for ComponentSets (&lt;a href="https://pysb.readthedocs.io/en/stable/modules/core.html#pysb.core.ComponentSet.filter"&gt;documentation&lt;/a&gt;) (#340)&lt;/li&gt;
@@ -328,7 +350,7 @@ Support is also available on our
 &lt;ul&gt;
 &lt;li&gt;Fix export to BNG of expressions containing &lt;code&gt;log&lt;/code&gt; (#361)&lt;/li&gt;
 &lt;li&gt;Fix Kappa export when using parameters with overlapping (substring) names (#346)&lt;/li&gt;
-&lt;/ul&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.6.0 Released</title><link href="/news/pysb-v160-released" rel="alternate"></link><published>2018-03-07T00:00:00-06:00</published><updated>2018-03-07T00:00:00-06:00</updated><author><name></name></author><id>tag:None,2018-03-07:/news/pysb-v160-released</id><summary type="html">&lt;h1&gt;New Features&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.6.0 Released</title><link href="/news/pysb-v160-released" rel="alternate"/><published>2018-03-07T00:00:00-06:00</published><updated>2018-03-07T00:00:00-06:00</updated><author><name/></author><id>tag:None,2018-03-07:/news/pysb-v160-released</id><summary type="html">&lt;h1&gt;New Features&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;New reversible rule operator &lt;code&gt;|&lt;/code&gt;; the previous &lt;code&gt;&amp;lt;&amp;gt;&lt;/code&gt; operator is now pending deprecation (#309)&lt;/li&gt;
 &lt;li&gt;Saving and loading of &lt;code&gt;SimulationResult&lt;/code&gt; objects with metadata in HDF5 format (#292)&lt;/li&gt;
@@ -363,7 +385,7 @@ Support is also available on our
 &lt;li&gt;Fixes for &lt;code&gt;ComplexPattern.is_concrete()&lt;/code&gt; (#307)&lt;/li&gt;
 &lt;li&gt;Reversible &lt;code&gt;Rule.is_synth()&lt;/code&gt; and &lt;code&gt;is_deg()&lt;/code&gt; now work for reversible patterns (#326)&lt;/li&gt;
 &lt;li&gt;Fix error when running Tyson model with &lt;code&gt;CupSodaSimulator&lt;/code&gt; (#332)&lt;/li&gt;
-&lt;/ul&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.5.0 Released</title><link href="/news/pysb-v150-released" rel="alternate"></link><published>2017-08-19T00:00:00-05:00</published><updated>2017-08-19T00:00:00-05:00</updated><author><name></name></author><id>tag:None,2017-08-19:/news/pysb-v150-released</id><summary type="html">&lt;h1&gt;New features&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.5.0 Released</title><link href="/news/pysb-v150-released" rel="alternate"/><published>2017-08-19T00:00:00-05:00</published><updated>2017-08-19T00:00:00-05:00</updated><author><name/></author><id>tag:None,2017-08-19:/news/pysb-v150-released</id><summary type="html">&lt;h1&gt;New features&lt;/h1&gt;
 &lt;p&gt;&lt;code&gt;BngSimulator&lt;/code&gt;, an interface to all simulators provided by BioNetGen: ODE, partitioned-leaping, SSA (stochastic) and NFsim (network-free stochastic). See &lt;code&gt;pysb.simulator.bng.BngSimulator&lt;/code&gt; (#272).&lt;/p&gt;
 &lt;h1&gt;General improvements&lt;/h1&gt;
 &lt;ul&gt;
@@ -383,11 +405,13 @@ Support is also available on our
 &lt;li&gt;Accessing &lt;code&gt;SimulationResult.all&lt;/code&gt; no longer crashes when &lt;code&gt;unicode&lt;/code&gt; strings are used for observable or expression names under Python 2 (#291, issue #290). We thought we fixed the whole unicode-and-numpy issue here back in #245, but apparently we missed a spot.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;MatlabExporter&lt;/code&gt; now correctly handles empty observables, i.e. observables whose pattern doesn't match any reachable species (#289).&lt;/li&gt;
 &lt;li&gt;Some code errors in the tutorial (module/class names that didn't get updated during a code refactoring) have been corrected (#286). Thanks to Michael Retchin for catching this.&lt;/li&gt;
-&lt;/ul&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.4.0 Released</title><link href="/news/pysb-v140-released" rel="alternate"></link><published>2017-06-09T00:00:00-05:00</published><updated>2017-06-09T00:00:00-05:00</updated><author><name></name></author><id>tag:None,2017-06-09:/news/pysb-v140-released</id><summary type="html">&lt;h1&gt;New features&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.4.0 Released</title><link href="/news/pysb-v140-released" rel="alternate"/><published>2017-06-09T00:00:00-05:00</published><updated>2017-06-09T00:00:00-05:00</updated><author><name/></author><id>tag:None,2017-06-09:/news/pysb-v140-released</id><summary type="html">&lt;h1&gt;New features&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;StochKitSimulator&lt;/code&gt;, an interface to the stochastic simulator &lt;a href="https://github.com/StochSS/StochKit"&gt;StochKit&lt;/a&gt;. See &lt;code&gt;pysb.simulator.stochkit.StochKitSimulator&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;InitialsSensitivity&lt;/code&gt;, a tool to perform pairwise sensitivity analysis of initial conditions. See &lt;code&gt;pysb.tools.sensitivity_analysis.InitialSensitivity&lt;/code&gt;. &lt;strong&gt;EXPERIMENTAL&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Import models directly from BioModels from just their ID (BIOMDxxx... or MODELxxx...) with &lt;code&gt;pysb.importers.sbml.model …&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h1&gt;New features&lt;/h1&gt;
+&lt;li&gt;Import models directly from BioModels from just their ID (BIOMDxxx... or MODELxxx...) with &lt;code&gt;pysb.importers.sbml.model_from_biomodels()&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;General …&lt;/h1&gt;</summary><content type="html">&lt;h1&gt;New features&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;StochKitSimulator&lt;/code&gt;, an interface to the stochastic simulator &lt;a href="https://github.com/StochSS/StochKit"&gt;StochKit&lt;/a&gt;. See &lt;code&gt;pysb.simulator.stochkit.StochKitSimulator&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;InitialsSensitivity&lt;/code&gt;, a tool to perform pairwise sensitivity analysis of initial conditions. See &lt;code&gt;pysb.tools.sensitivity_analysis.InitialSensitivity&lt;/code&gt;. &lt;strong&gt;EXPERIMENTAL&lt;/strong&gt;.&lt;/li&gt;
@@ -409,7 +433,7 @@ Support is also available on our
 &lt;li&gt;Applying a compartment condition to a MonomerPattern that already has one now correctly raises an exception (#258).&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;PysbFlatExporter&lt;/code&gt; now works with compartments using inline size declarations (#210).&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;ComplexPattern.is_equivalent_to&lt;/code&gt; now correctly handles certain combinations of compartments that were previously mishandled (#257).&lt;/li&gt;
-&lt;/ul&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.3.0 Released</title><link href="/news/pysb-v130-released" rel="alternate"></link><published>2017-03-24T00:00:00-05:00</published><updated>2017-03-24T00:00:00-05:00</updated><author><name></name></author><id>tag:None,2017-03-24:/news/pysb-v130-released</id><summary type="html">&lt;h1&gt;New features&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.3.0 Released</title><link href="/news/pysb-v130-released" rel="alternate"/><published>2017-03-24T00:00:00-05:00</published><updated>2017-03-24T00:00:00-05:00</updated><author><name/></author><id>tag:None,2017-03-24:/news/pysb-v130-released</id><summary type="html">&lt;h1&gt;New features&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;CupSodaSimulator, a wrapper for the &lt;a href="https://github.com/aresio/cupSODA"&gt;cupSODA&lt;/a&gt; GPU-based ODE integrator. No special Python libraries are necessary since cupSODA comes as a standalone binary, but if PyCUDA is installed then PySB can auto-detect the configuration details of your GPU. See the documentation in &lt;code&gt;pysb.simulator.CupSodaSimulator&lt;/code&gt; for more.&lt;/li&gt;
 &lt;li&gt;Simulators can …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h1&gt;New features&lt;/h1&gt;
@@ -422,17 +446,17 @@ Support is also available on our
 &lt;ul&gt;
 &lt;li&gt;BNGL and SBML importers now work on Windows.&lt;/li&gt;
 &lt;li&gt;Observables and Expressions with unicode objects for names (rather than strings) no longer trigger an internal numpy exception in the PySB Simulator code on Python 2. An exception will still be raised if the unicode names do contain non-ascii-safe characters, but the error message is now more intelligible.&lt;/li&gt;
-&lt;/ul&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.2.2 Released</title><link href="/news/pysb-v122-released" rel="alternate"></link><published>2017-01-11T00:00:00-06:00</published><updated>2017-01-11T00:00:00-06:00</updated><author><name></name></author><id>tag:None,2017-01-11:/news/pysb-v122-released</id><content type="html">&lt;h1&gt;Bugfixes&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.2.2 Released</title><link href="/news/pysb-v122-released" rel="alternate"/><published>2017-01-11T00:00:00-06:00</published><updated>2017-01-11T00:00:00-06:00</updated><author><name/></author><id>tag:None,2017-01-11:/news/pysb-v122-released</id><content type="html">&lt;h1&gt;Bugfixes&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;The SBML exporter works again (it's been broken ever since v1.0.0 😬)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1&gt;Other&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Documentation improvements&lt;/li&gt;
-&lt;/ul&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.2.1 Released</title><link href="/news/pysb-v121-released" rel="alternate"></link><published>2016-10-13T00:00:00-05:00</published><updated>2016-10-13T00:00:00-05:00</updated><author><name></name></author><id>tag:None,2016-10-13:/news/pysb-v121-released</id><content type="html">&lt;h1&gt;Bugfixes&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.2.1 Released</title><link href="/news/pysb-v121-released" rel="alternate"/><published>2016-10-13T00:00:00-05:00</published><updated>2016-10-13T00:00:00-05:00</updated><author><name/></author><id>tag:None,2016-10-13:/news/pysb-v121-released</id><content type="html">&lt;h1&gt;Bugfixes&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Python 3 / unicode compatibility fixes&lt;/li&gt;
-&lt;/ul&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.2.0 Released</title><link href="/news/pysb-v120-released" rel="alternate"></link><published>2016-10-07T00:00:00-05:00</published><updated>2016-10-07T00:00:00-05:00</updated><author><name></name></author><id>tag:None,2016-10-07:/news/pysb-v120-released</id><summary type="html">&lt;h1&gt;New features&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.2.0 Released</title><link href="/news/pysb-v120-released" rel="alternate"/><published>2016-10-07T00:00:00-05:00</published><updated>2016-10-07T00:00:00-05:00</updated><author><name/></author><id>tag:None,2016-10-07:/news/pysb-v120-released</id><summary type="html">&lt;h1&gt;New features&lt;/h1&gt;
 &lt;p&gt;*Brand new Simulator classes and SimulationResult classes in the 
 &lt;code&gt;pysb.simulator&lt;/code&gt; package. The old &lt;code&gt;pysb.integrate&lt;/code&gt; API is unchanged but has been
  reimplemented using the Simulator class.
@@ -440,7 +464,7 @@ Support is also available on our
 Currently supports BNGL and SBML model import.&lt;/p&gt;
 &lt;h1&gt;Bugfixes&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;pysb …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h1&gt;New features&lt;/h1&gt;
+&lt;li&gt;pysb_flat …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h1&gt;New features&lt;/h1&gt;
 &lt;p&gt;*Brand new Simulator classes and SimulationResult classes in the 
 &lt;code&gt;pysb.simulator&lt;/code&gt; package. The old &lt;code&gt;pysb.integrate&lt;/code&gt; API is unchanged but has been
  reimplemented using the Simulator class.
@@ -451,7 +475,7 @@ Currently supports BNGL and SBML model import.&lt;/p&gt;
 &lt;li&gt;pysb_flat exporter now supports &lt;code&gt;MatchOnce&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Some Python 2 Unicode issues were addressed by eliminating uses of 
 &lt;code&gt;type(...) == str&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>Catalysis tutorial</title><link href="/tutorials/catalysis-tutorial" rel="alternate"></link><published>2016-06-21T00:00:00-05:00</published><updated>2016-06-21T00:00:00-05:00</updated><author><name>Alex Lubbock</name></author><id>tag:None,2016-06-21:/tutorials/catalysis-tutorial</id><summary type="html"></summary><content type="html">&lt;style type="text/css"&gt;/*!
+&lt;/ul&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>Catalysis tutorial</title><link href="/tutorials/catalysis-tutorial" rel="alternate"/><published>2016-06-21T00:00:00-05:00</published><updated>2016-06-21T00:00:00-05:00</updated><author><name>Alex Lubbock</name></author><id>tag:None,2016-06-21:/tutorials/catalysis-tutorial</id><summary type="html"/><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -1513,6 +1537,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
  .highlight pre  .cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
  .highlight pre  .gd { color: #A00000 } /* Generic.Deleted */
  .highlight pre  .ge { font-style: italic } /* Generic.Emph */
+ .highlight pre  .ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
  .highlight pre  .gr { color: #E40000 } /* Generic.Error */
  .highlight pre  .gh { color: #000080; font-weight: bold } /* Generic.Heading */
  .highlight pre  .gi { color: #008400 } /* Generic.Inserted */
@@ -2271,7 +2296,7 @@ oANl1/z2h/79H/4qjZdf89of+/R/+KoooANl1/z2h/79H/4qliikWZ5JJFZmVV+VNuMZ9z60UUAf
 &lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[11]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;matplotlib&lt;/span&gt; &lt;span class="n"&gt;inline&lt;/span&gt;
+&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="k"&gt;matplotlib&lt;/span&gt; inline
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pysb.integrate&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;odesolve&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;plt&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
@@ -2621,11 +2646,11 @@ GiiUUkr5pYFCKaWUX/8f6maBqBTGVUUAAAAASUVORK5CYII=
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="Tutorials"></category></entry><entry><title>PySB v1.1.1 Released</title><link href="/news/pysb-v111-released" rel="alternate"></link><published>2016-05-02T00:00:00-05:00</published><updated>2016-05-02T00:00:00-05:00</updated><author><name></name></author><id>tag:None,2016-05-02:/news/pysb-v111-released</id><content type="html">&lt;p&gt;Release to fix one minor bug with the PyPI upload.&lt;/p&gt;
+</content><category term="Tutorials"/></entry><entry><title>PySB v1.1.1 Released</title><link href="/news/pysb-v111-released" rel="alternate"/><published>2016-05-02T00:00:00-05:00</published><updated>2016-05-02T00:00:00-05:00</updated><author><name/></author><id>tag:None,2016-05-02:/news/pysb-v111-released</id><content type="html">&lt;p&gt;Release to fix one minor bug with the PyPI upload.&lt;/p&gt;
 &lt;h1&gt;Bugfixes&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;The source distribution on PyPI now includes ez_setup.py.&lt;/li&gt;
-&lt;/ul&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.1.0 Released</title><link href="/news/pysb-v110-released" rel="alternate"></link><published>2016-04-21T00:00:00-05:00</published><updated>2016-04-21T00:00:00-05:00</updated><author><name></name></author><id>tag:None,2016-04-21:/news/pysb-v110-released</id><summary type="html">&lt;p&gt;PySB has officially adopted semantic versioning. This means v1.1.0 includes new features as compared to v1.0.x, but is still backwards compatible so you won't have to change any of your models to upgrade to it.&lt;/p&gt;
+&lt;/ul&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.1.0 Released</title><link href="/news/pysb-v110-released" rel="alternate"/><published>2016-04-21T00:00:00-05:00</published><updated>2016-04-21T00:00:00-05:00</updated><author><name/></author><id>tag:None,2016-04-21:/news/pysb-v110-released</id><summary type="html">&lt;p&gt;PySB has officially adopted semantic versioning. This means v1.1.0 includes new features as compared to v1.0.x, but is still backwards compatible so you won't have to change any of your models to upgrade to it.&lt;/p&gt;
 &lt;h1&gt;New features&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Full Python 3 compatibility. All tests pass under Python …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;PySB has officially adopted semantic versioning. This means v1.1.0 includes new features as compared to v1.0.x, but is still backwards compatible so you won't have to change any of your models to upgrade to it.&lt;/p&gt;
@@ -2645,4 +2670,4 @@ GiiUUkr5pYFCKaWUX/8f6maBqBTGVUUAAAAASUVORK5CYII=
 &lt;li&gt;We are now publishing coverage testing results at https://coveralls.io/github/pysb/pysb .&lt;/li&gt;
 &lt;li&gt;Documentation of the PySB requirements and installation procedure has been improved significantly.&lt;/li&gt;
 &lt;li&gt;Numerous bugfixes. We will try to be more explicit about enumerating these in future releases.&lt;/li&gt;
-&lt;/ul&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.0.1 Released</title><link href="/news/pysb-v101-released" rel="alternate"></link><published>2015-11-06T00:00:00-06:00</published><updated>2015-11-06T00:00:00-06:00</updated><author><name></name></author><id>tag:None,2015-11-06:/news/pysb-v101-released</id><content type="html">&lt;p&gt;PySB v1.0.1 has been released&lt;/p&gt;</content><category term="news"></category><category term="pysb-release"></category></entry><entry><title>PySB v1.0.0 Released</title><link href="/news/pysb-v100-released" rel="alternate"></link><published>2014-12-23T00:00:00-06:00</published><updated>2014-12-23T00:00:00-06:00</updated><author><name></name></author><id>tag:None,2014-12-23:/news/pysb-v100-released</id><content type="html">&lt;p&gt;PySB v1.0.0 has been released&lt;/p&gt;</content><category term="news"></category><category term="pysb-release"></category></entry></feed>
+&lt;/ul&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.0.1 Released</title><link href="/news/pysb-v101-released" rel="alternate"/><published>2015-11-06T00:00:00-06:00</published><updated>2015-11-06T00:00:00-06:00</updated><author><name/></author><id>tag:None,2015-11-06:/news/pysb-v101-released</id><content type="html">&lt;p&gt;PySB v1.0.1 has been released&lt;/p&gt;</content><category term="news"/><category term="pysb-release"/></entry><entry><title>PySB v1.0.0 Released</title><link href="/news/pysb-v100-released" rel="alternate"/><published>2014-12-23T00:00:00-06:00</published><updated>2014-12-23T00:00:00-06:00</updated><author><name/></author><id>tag:None,2014-12-23:/news/pysb-v100-released</id><content type="html">&lt;p&gt;PySB v1.0.0 has been released&lt;/p&gt;</content><category term="news"/><category term="pysb-release"/></entry></feed>

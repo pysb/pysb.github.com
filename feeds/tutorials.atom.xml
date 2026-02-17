@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>PySB - Tutorials</title><link href="/" rel="alternate"></link><link href="/feeds/tutorials.atom.xml" rel="self"></link><id>/</id><updated>2016-06-21T00:00:00-05:00</updated><subtitle>Systems biology modeling in Python</subtitle><entry><title>Catalysis tutorial</title><link href="/tutorials/catalysis-tutorial" rel="alternate"></link><published>2016-06-21T00:00:00-05:00</published><updated>2016-06-21T00:00:00-05:00</updated><author><name>Alex Lubbock</name></author><id>tag:None,2016-06-21:/tutorials/catalysis-tutorial</id><summary type="html"></summary><content type="html">&lt;style type="text/css"&gt;/*!
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PySB - Tutorials</title><link href="/" rel="alternate"/><link href="/feeds/tutorials.atom.xml" rel="self"/><id>/</id><updated>2016-06-21T00:00:00-05:00</updated><subtitle>Systems biology modeling in Python</subtitle><entry><title>Catalysis tutorial</title><link href="/tutorials/catalysis-tutorial" rel="alternate"/><published>2016-06-21T00:00:00-05:00</published><updated>2016-06-21T00:00:00-05:00</updated><author><name>Alex Lubbock</name></author><id>tag:None,2016-06-21:/tutorials/catalysis-tutorial</id><summary type="html"/><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -1061,6 +1061,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
  .highlight pre  .cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
  .highlight pre  .gd { color: #A00000 } /* Generic.Deleted */
  .highlight pre  .ge { font-style: italic } /* Generic.Emph */
+ .highlight pre  .ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
  .highlight pre  .gr { color: #E40000 } /* Generic.Error */
  .highlight pre  .gh { color: #000080; font-weight: bold } /* Generic.Heading */
  .highlight pre  .gi { color: #008400 } /* Generic.Inserted */
@@ -1819,7 +1820,7 @@ oANl1/z2h/79H/4qjZdf89of+/R/+KoooANl1/z2h/79H/4qliikWZ5JJFZmVV+VNuMZ9z60UUAf
 &lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[11]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;matplotlib&lt;/span&gt; &lt;span class="n"&gt;inline&lt;/span&gt;
+&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="k"&gt;matplotlib&lt;/span&gt; inline
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pysb.integrate&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;odesolve&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;plt&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
@@ -2169,4 +2170,4 @@ GiiUUkr5pYFCKaWUX/8f6maBqBTGVUUAAAAASUVORK5CYII=
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="Tutorials"></category></entry></feed>
+</content><category term="Tutorials"/></entry></feed>
